@@ -1,0 +1,1293 @@
+<!DOCTYPE html><html prefix="dcterms: http://purl.org/dc/terms/" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Notes on the Theory of Consumption &amp; Savings</title>
+<!--Generated on Thu Apr 30 22:32:56 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on December 2, 2024.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Notes on the Theory of Consumption &amp; Savings</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Michael Kotrous
+</span><span class="ltx_author_notes">Email: michael.kotrous@uga.edu
+<span class="ltx_contact ltx_role_affiliation">John Munro Godfrey, Sr. Department of Economics
+<br class="ltx_break">University of Georgia
+</span></span></span>
+</div>
+<div class="ltx_dates">(December 2, 2024)</div>
+
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Consumption is about two-thirds of GDP in the U.S. and other rich countries. Consumption decisions are determined simultaneously with savings and investment decisions, as well as household formation, fertility, and so on. That which is not consumed can be saved, invested, or bequested to heirs, and financial instruments and institutions have emerged to address the desire of households to smooth their consumption over their lifetimes. These instruments and institutions allow households to save during their working years and consume in retirement.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">The workhorse models of consumption over one’s lifetime is the life-cycle (finite time horizon) and permanent income (infinitely-lived households) models. They differ in time horizons, and the life-cycle model explicitly considers consumption behavior in light of the fact that many people choose to retire late in life. Aside from these differences, both models ground consumption behavior in microeconomic theory. These models advanced the theory of consumption by making it more than just a static decision based on current income, as Keynes argued. Both models view consumption as an intertemporal choice that balances one’s current situation with her expectations about the future.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Stylized facts about consumption</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">From <cite class="ltx_cite ltx_citemacro_citet">Attanasio (<a href="#bib.bib2" title="Consumption" class="ltx_ref">1999</a>)</cite>:</p>
+<ul id="S2.I1" class="ltx_itemize">
+<li id="S2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">In aggregate and household data, non-durable consumption is less volatile than disposable income. That is, non-durable consumption is smooth over the business cycle and labor supply.</p>
+</div>
+</li>
+<li id="S2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Meanwhile, durable consumption is more volatile than disposable income. Durable consumption is pro-cyclical and is volatile against labor supply.</p>
+</div>
+</li>
+<li id="S2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">In micro household data, a hump shape is found total consumption. However, if one looks only at non-durable consumption and controls for “adult equivalents” in the household, consumption behavior among households appears more consistent with the flat line predicted by the permanent income model. Yet still, consumption appears to decline around retirement age in US and UK data. Possible explanations include:</p>
+<ul id="S2.I1.i3.I1" class="ltx_itemize">
+<li id="S2.I1.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S2.I1.i3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Non-separability of consumption and leisure (i.e., much leisure requires consumption of some form). Heckman (1974)</p>
+</div>
+</li>
+<li id="S2.I1.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S2.I1.i3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Failure of the permanent income model. One study–Carroll and Summers (1991)–found that when separating households by educational attainment of head of household, variability in consumption closely tracks with variability in income across education groups (higher educated; higher income; more pronounced increase in consumption when income increased after earning degree; high school dropouts have flatter consumption over their lifetimes).</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">A brief note on household-level micro data. Various papers on U.S. consumption have used Consumption Expenditure Surveys (CEX) data. To avoid issues with non-random attrition, authors have formed a “pseudo-panel” in which they average log consumption over cohorts defined by 5-year age groups of head of household (e.g., 20-24 in 1980, 21-25 in 1981, 22-26 in 1982, …). If there are <math id="S2.p2.m1" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> age groups and <math id="S2.p2.m2" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> cross-sections of observations, then the pseudo-panel has dimension <math id="S2.p2.m3" class="ltx_Math" alttext="Q\times T" display="inline"><mrow><mi>Q</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>T</mi></mrow></math>.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>The life cycle and permanent income models</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">The life cycle and permanent income model differ in their time horizon. The life cycle model assumes finite lifespan, while the permanent income model analyzes infinitely-lived households. The life cycle model models rational consumption behavior in light of large loss in disposable income upon retirement, while the permanent income model focuses on consumption-smoothing in light of variation in disposable income due to employment/disemployment over an infinite time horizon.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">We will see that similar predictions are made by these models. In both models, optimal consumption over time is described by the Euler equation derived from utility maximization. Hence, the life cycle model (Modigliani and Brumlerg) and permanent income model (Friedman) are grounded in micro theory and treat consumption as an intertemporal decision. This contrasts with the Keynesian consumption function, which simply defines consumption as a function of current disposable income, usually a fixed fraction of disposable income.</p>
+</div>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>Deterministic Income: Deriving Euler Equation</h3>
+
+<section id="S3.SS1.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.1 </span>Intertemporal Budget Constraint</h4>
+
+<div id="S3.SS1.SSS1.p1" class="ltx_para">
+<p class="ltx_p">Consider the simplest case: a household knows the income <math id="S3.SS1.SSS1.p1.m1" class="ltx_Math" alttext="y_{t}" display="inline"><msub><mi>y</mi><mi>t</mi></msub></math> that it will earn in every period, and it must choose a sequence of consumption <math id="S3.SS1.SSS1.p1.m2" class="ltx_Math" alttext="c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math> and total savings <math id="S3.SS1.SSS1.p1.m3" class="ltx_Math" alttext="a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math> that maximizes its preferences. Assume household earns market-prevailing interest rate <math id="S3.SS1.SSS1.p1.m4" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>. For an infinitely-lived household, we have:</p>
+<table id="S3.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex1.m1" class="ltx_Math" alttext="\max_{\{c_{t},a_{t+1}\}_{t=0}^{\infty}}\sum_{t=0}^{\infty}\beta^{t}u(c_{t})" display="block"><mrow><munder><mi>max</mi><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>c</mi><mi>t</mi></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">}</mo></mrow><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></munder><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>β</mi><mi>t</mi></msup><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">subject to <math id="S3.SS1.SSS1.p1.m5" class="ltx_Math" alttext="c_{t}+a_{t+1}=y_{t}+(1+r)a_{t}" display="inline"><mrow><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow></mrow></mrow></math>, where <math id="S3.SS1.SSS1.p1.m6" class="ltx_Math" alttext="a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math> is given.</p>
+</div>
+<div id="S3.SS1.SSS1.p2" class="ltx_para">
+<p class="ltx_p">This is the household’s intertemporal budget constraint. Attach <math id="S3.SS1.SSS1.p2.m1" class="ltx_Math" alttext="\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math> as Lagrange multiplier on period <math id="S3.SS1.SSS1.p2.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>’s budget constraint. We can derive the household’s Euler equation by taking first-order coditions with respect to consumption and savings choice each period.</p>
+</div>
+<div id="S3.SS1.SSS1.p3" class="ltx_para">
+<table id="S3.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex2.m1.m1" class="ltx_Math" alttext="c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex2.m2" class="ltx_Math" alttext="\displaystyle\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex2.m3" class="ltx_Math" alttext="\displaystyle=\beta^{t}u^{\prime}(c_{t})\Rightarrow\lambda_{t+1}=\beta^{t+1}u^%
+{\prime}(c_{t+1})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>β</mi><mi>t</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>λ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msup><mi>β</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex3.m1.m1" class="ltx_Math" alttext="a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex3.m2" class="ltx_Math" alttext="\displaystyle\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex3.m3" class="ltx_Math" alttext="\displaystyle=\lambda_{t+1}(1+r)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>λ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS1.p4" class="ltx_para">
+<p class="ltx_p">Hence household’s Euler equation is given by</p>
+<table id="S3.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex4.m1" class="ltx_Math" alttext="\underbrace{u^{\prime}(c_{t})}_{\text{Marginal Cost of Savings}}=\underbrace{%
+\beta(1+r)u^{\prime}(c_{t+1})}_{\text{Marginal Benefit of Savings}}" display="block"><mrow><munder><munder accentunder="true"><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>Marginal Cost of Savings</mtext></munder><mo>=</mo><munder><munder accentunder="true"><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>Marginal Benefit of Savings</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS1.p5" class="ltx_para">
+<p class="ltx_p">To derive some interesting results, let’s impose INADA conditions on household’s utility function. Let’s suppose utility is strictly increasing and strictly concave, so <math id="S3.SS1.SSS1.p5.m1" class="ltx_Math" alttext="u^{\prime}(\cdot)&gt;0" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> everywhere and <math id="S3.SS1.SSS1.p5.m2" class="ltx_Math" alttext="u^{\prime\prime}(\cdot)&lt;0" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></math>. Further suppose that <math id="S3.SS1.SSS1.p5.m3" class="ltx_Math" alttext="u^{\prime}(0)\to\infty" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, and <math id="S3.SS1.SSS1.p5.m4" class="ltx_Math" alttext="u^{\prime}(n)\to 0" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math> as <math id="S3.SS1.SSS1.p5.m5" class="ltx_Math" alttext="n\to\infty" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>.</p>
+</div>
+<div id="S3.SS1.SSS1.p6" class="ltx_para">
+<p class="ltx_p">Consumption decision then depends on the relationship between the household’s subjective discount factor <math id="S3.SS1.SSS1.p6.m1" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> and the market discount factor <math id="S3.SS1.SSS1.p6.m2" class="ltx_Math" alttext="\frac{1}{1+r}" display="inline"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></math>. We can break this into three cases:</p>
+<table id="S3.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Case #1:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex5.m2" class="ltx_Math" alttext="\displaystyle\beta&lt;\frac{1}{1+r}\Rightarrow u^{\prime}(c_{t})&lt;u^{\prime}(c_{t+%
+1})\Rightarrow c_{t}&gt;c_{t+1}" display="inline"><mrow><mi>β</mi><mo>&lt;</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo stretchy="false">⇒</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>c</mi><mi>t</mi></msub><mo>&gt;</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Case #2:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex6.m2" class="ltx_Math" alttext="\displaystyle\beta&gt;\frac{1}{1+r}\Rightarrow u^{\prime}(c_{t})&gt;u^{\prime}(c_{t+%
+1})\Rightarrow c_{t}&lt;c_{t+1}" display="inline"><mrow><mi>β</mi><mo>&gt;</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo stretchy="false">⇒</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>c</mi><mi>t</mi></msub><mo>&lt;</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Case #3:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex7.m2" class="ltx_Math" alttext="\displaystyle\beta=\frac{1}{1+r}\Rightarrow u^{\prime}(c_{t})=u^{\prime}(c_{t+%
+1})\Rightarrow c_{t}=c_{t+1}" display="inline"><mrow><mi>β</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo stretchy="false">⇒</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS1.p7" class="ltx_para">
+<p class="ltx_p">These results follow from assumption that <math id="S3.SS1.SSS1.p7.m1" class="ltx_Math" alttext="u(\cdot)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></math> is strictly concave, so <math id="S3.SS1.SSS1.p7.m2" class="ltx_Math" alttext="u^{\prime}(\cdot)" display="inline"><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></math> is a strictly decreasing function. We call these three cases the <span class="ltx_text ltx_font_bold">“consumption-tilting” savings motive</span>. If household is less patient than the market (case 1), then household consumes more in the present because the marginal cost of savings exceeds its marginal benefit when consumption is smoothed. The opposite is true of a household that is more patient than the market. Finally, if the subjective discount factor and market discount factor are equal, the household smoothes its consumption. This special case in which <math id="S3.SS1.SSS1.p7.m3" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> will be of particular interest when we introduce stochastic income process later.</p>
+</div>
+<div id="S3.SS1.SSS1.p8" class="ltx_para">
+<p class="ltx_p">This result also holds for the finite case. Suppose household lives <math id="S3.SS1.SSS1.p8.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> periods. We write household’s optimization problem as</p>
+<table id="S3.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex8.m1" class="ltx_Math" alttext="\max_{\{c_{t},a_{t+1}\}_{t=0}^{T}}\sum_{t=0}^{T}\beta^{t}u(c_{t})" display="block"><mrow><munder><mi>max</mi><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>c</mi><mi>t</mi></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">}</mo></mrow><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></msubsup></munder><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mrow><msup><mi>β</mi><mi>t</mi></msup><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">subject to <math id="S3.SS1.SSS1.p8.m2" class="ltx_Math" alttext="c_{t}+a_{t+1}=y_{t}+(1+r)a_{t}" display="inline"><mrow><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow></mrow></mrow></math>, where <math id="S3.SS1.SSS1.p8.m3" class="ltx_Math" alttext="a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math> is given and <math id="S3.SS1.SSS1.p8.m4" class="ltx_Math" alttext="a_{T+1}\geq 0" display="inline"><mrow><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≥</mo><mn>0</mn></mrow></math>. The nonnegativity constraint on savings in the final period is critical. Otherwise, household would maximize utility by dying with infinite debt.</p>
+</div>
+<div id="S3.SS1.SSS1.p9" class="ltx_para">
+<p class="ltx_p">As before, attach Lagrange multiplier <math id="S3.SS1.SSS1.p9.m1" class="ltx_Math" alttext="\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math> to period <math id="S3.SS1.SSS1.p9.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>’s budget constraint. Also attach multiplier <math id="S3.SS1.SSS1.p9.m3" class="ltx_Math" alttext="\mu" display="inline"><mi>μ</mi></math> to nonnegativity constraint on <math id="S3.SS1.SSS1.p9.m4" class="ltx_Math" alttext="a_{T+1}" display="inline"><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub></math>. Then first-order conditions are:</p>
+<table id="S3.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex9.m1.m1" class="ltx_Math" alttext="c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex9.m2" class="ltx_Math" alttext="\displaystyle\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex9.m3" class="ltx_Math" alttext="\displaystyle=\beta^{t}u^{\prime}(c_{t})\Rightarrow\lambda_{t+1}=\beta^{t+1}u^%
+{\prime}(c_{t+1})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>β</mi><mi>t</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>λ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msup><mi>β</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex10.m1.m1" class="ltx_Math" alttext="a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex10.m2" class="ltx_Math" alttext="\displaystyle\lambda_{t}" display="inline"><msub><mi>λ</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex10.m3" class="ltx_Math" alttext="\displaystyle=\lambda_{t+1}(1+r)\text{ for $t=0,1,\dots,T-1$}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>λ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mtext> for </mtext><mrow><mi>t</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>T</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex11.m1.m1" class="ltx_Math" alttext="a_{T+1}" display="inline"><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex11.m2" class="ltx_Math" alttext="\displaystyle\lambda_{T}" display="inline"><msub><mi>λ</mi><mi>T</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex11.m3" class="ltx_Math" alttext="\displaystyle=\mu" display="inline"><mrow><mi></mi><mo>=</mo><mi>μ</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS1.p10" class="ltx_para">
+<p class="ltx_p">The finitely-lived household faces same necessary condition for its consumption as infinitely-lived household: <math id="S3.SS1.SSS1.p10.m1" class="ltx_Math" alttext="u^{\prime}(c_{t})=\beta(1+r)u^{\prime}(c_{t+1})" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Observe that <math id="S3.SS1.SSS1.p10.m2" class="ltx_Math" alttext="\mu=\lambda_{T}=\beta^{T}u^{\prime}(c_{T})" display="inline"><mrow><mi>μ</mi><mo>=</mo><msub><mi>λ</mi><mi>T</mi></msub><mo>=</mo><mrow><msup><mi>β</mi><mi>T</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>T</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. As long as the marginal benefit of consumption is strictly positive in the final period of life, <math id="S3.SS1.SSS1.p10.m3" class="ltx_Math" alttext="\mu&gt;0" display="inline"><mrow><mi>μ</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, and by Kuhn-Tucker condition, <math id="S3.SS1.SSS1.p10.m4" class="ltx_Math" alttext="a_{T+1}=0" display="inline"><mrow><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>. In words, as long as the household gets some positive marginal benefit from additional consumption in the last period of life, it will exhaust all of its wealth in its final period.<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_tag ltx_tag_note">1</span>For discussion of a simple two-period consumption-savings model and extensions, see Chapter 6 of <cite class="ltx_cite ltx_citemacro_citet">Adda and Cooper (<a href="#bib.bib1" title="Dynamic economics: quantitative methods &amp; applications" class="ltx_ref">2003</a>)</cite>.</span></span></span></p>
+</div>
+</section>
+<section id="S3.SS1.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.2 </span>Lifetime Budget Constraint &amp; the Consumption Function</h4>
+
+<div id="S3.SS1.SSS2.p1" class="ltx_para">
+<p class="ltx_p">We can also derive the same Euler equations by finding the household’s lifetime budget constraint, which simplifies our problem by removing the savings choice.</p>
+<table id="S3.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex12.m1" class="ltx_Math" alttext="\displaystyle t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex12.m2" class="ltx_Math" alttext="\displaystyle c_{0}+a_{1}" display="inline"><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex12.m3" class="ltx_Math" alttext="\displaystyle=y_{0}+a_{0}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex13.m1" class="ltx_Math" alttext="\displaystyle t=1" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex13.m2" class="ltx_Math" alttext="\displaystyle c_{1}+a_{2}" display="inline"><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex13.m3" class="ltx_Math" alttext="\displaystyle=y_{1}+(1+r)a_{1}\Rightarrow a_{1}=\frac{c_{1}+a_{2}-y_{1}}{1+r}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex14.m1" class="ltx_Math" alttext="\displaystyle t=2" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex14.m2" class="ltx_Math" alttext="\displaystyle c_{2}+a_{3}" display="inline"><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex14.m3" class="ltx_Math" alttext="\displaystyle=y_{2}+(1+r)a_{2}\Rightarrow a_{2}=\frac{c_{2}+a_{3}-y_{2}}{1+r}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>a</mi><mn>2</mn></msub><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub></mrow><mo>−</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p2" class="ltx_para">
+<p class="ltx_p">It is conventional to say that initial wealth endowment <math id="S3.SS1.SSS2.p2.m1" class="ltx_Math" alttext="a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math> does not earn market return in period <math id="S3.SS1.SSS2.p2.m2" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>, but thereafter savings <math id="S3.SS1.SSS2.p2.m3" class="ltx_Math" alttext="a_{t}" display="inline"><msub><mi>a</mi><mi>t</mi></msub></math> earns market return at rate <math id="S3.SS1.SSS2.p2.m4" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>. Replacing for <math id="S3.SS1.SSS2.p2.m5" class="ltx_Math" alttext="a_{1}" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math> and <math id="S3.SS1.SSS2.p2.m6" class="ltx_Math" alttext="a_{2}" display="inline"><msub><mi>a</mi><mn>2</mn></msub></math> in period 0’s budget constraint gives</p>
+<table id="S3.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex15.m1" class="ltx_Math" alttext="\displaystyle c_{0}+\frac{c_{1}+\left(\frac{c_{2}+a_{3}-y_{2}}{1+r}\right)-y_{%
+1}}{1+r}" display="inline"><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><mrow><mo>(</mo><mfrac><mrow><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub></mrow><mo>−</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow></mrow><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex15.m2" class="ltx_Math" alttext="\displaystyle=a_{0}+y_{0}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex16.m1" class="ltx_Math" alttext="\displaystyle c_{0}+\frac{c_{1}}{1+r}+\frac{c_{2}}{(1+r)^{2}}+\frac{a_{3}}{(1+%
+r)^{2}}" display="inline"><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mn>2</mn></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>a</mi><mn>3</mn></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex16.m2" class="ltx_Math" alttext="\displaystyle=a_{0}+y_{0}+\frac{y_{1}}{1+r}+\frac{y_{2}}{(1+r)^{2}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mn>2</mn></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p3" class="ltx_para">
+<p class="ltx_p">Observing the pattern, we see that in any period <math id="S3.SS1.SSS2.p3.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, household’s lifetime budget constraint is</p>
+<table id="S3.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex18.m1" class="ltx_Math" alttext="\sum_{t=0}^{T}\frac{c_{t}}{(1+r)^{t}}+\frac{a_{T+1}}{(1+r)^{T}}=a_{0}+\sum_{t=%
+0}^{T}\frac{y_{t}}{(1+r)^{t}}" display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>c</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup></mfrac></mrow><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p4" class="ltx_para">
+<p class="ltx_p">For the household that lives for only <math id="S3.SS1.SSS2.p4.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> periods, we saw in Section <a href="#S3.SS1.SSS1" title="3.1.1 Intertemporal Budget Constraint ‣ 3.1 Deterministic Income: Deriving Euler Equation ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a> that <math id="S3.SS1.SSS2.p4.m2" class="ltx_Math" alttext="a_{T+1}=0" display="inline"><mrow><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>, so the finite-horizon lifetime budget constraint simplifies to</p>
+<table id="S3.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex19.m1" class="ltx_Math" alttext="\sum_{t=0}^{T}\frac{c_{t}}{(1+r)^{t}}=a_{0}+\sum_{t=0}^{T}\frac{y_{t}}{(1+r)^{%
+t}}" display="block"><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>c</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p5" class="ltx_para">
+<p class="ltx_p">Meanwhile, for the infinitely-lived household, observe that for <math id="S3.SS1.SSS2.p5.m1" class="ltx_Math" alttext="T\to\infty" display="inline"><mrow><mi>T</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>, <math id="S3.SS1.SSS2.p5.m2" class="ltx_Math" alttext="\frac{a_{T+1}}{(1+r)^{T}}\to 0" display="inline"><mrow><mfrac><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup></mfrac><mo stretchy="false">→</mo><mn>0</mn></mrow></math>, so its lifetime budget constraint similarly simplifies to</p>
+<table id="S3.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex20.m1" class="ltx_Math" alttext="\sum_{t=0}^{\infty}\frac{c_{t}}{(1+r)^{t}}=a_{0}+\sum_{t=0}^{\infty}\frac{y_{t%
+}}{(1+r)^{t}}" display="block"><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msub><mi>c</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p6" class="ltx_para">
+<p class="ltx_p">In both cases, we see that the present value of consumption equals the sum of initial financial wealth <math id="S3.SS1.SSS2.p6.m1" class="ltx_Math" alttext="a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math> and the present value of its income flows.</p>
+</div>
+<div id="S3.SS1.SSS2.p7" class="ltx_para">
+<p class="ltx_p">The objective function remains the same, so attaching <math id="S3.SS1.SSS2.p7.m1" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> as Lagrange multiplier on lifetime budget constraint gives us FOC with respect to <math id="S3.SS1.SSS2.p7.m2" class="ltx_Math" alttext="c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math>:</p>
+<table id="S3.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex21.m1" class="ltx_Math" alttext="\beta^{t}u^{\prime}(c_{t})=\frac{\lambda}{(1+r)^{t}}" display="block"><mrow><mrow><msup><mi>β</mi><mi>t</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mi>λ</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p8" class="ltx_para">
+<p class="ltx_p">Rolling one period ahead, we see that <math id="S3.SS1.SSS2.p8.m1" class="ltx_Math" alttext="\beta^{t+1}u^{\prime}(c_{t+1})=\frac{\lambda}{(1+r)^{t+1}}" display="inline"><mrow><mrow><msup><mi>β</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mi>λ</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></math>. Hence</p>
+<table id="S3.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex22.m1" class="ltx_Math" alttext="\displaystyle\lambda=[\beta(1+r)]^{t}u^{\prime}(c_{t})" display="inline"><mrow><mi>λ</mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">[</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mi>t</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex22.m2" class="ltx_Math" alttext="\displaystyle=[\beta(1+r)]^{t+1}u^{\prime}(c_{t+1})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">[</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex23.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow u^{\prime}(c_{t})" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex23.m2" class="ltx_Math" alttext="\displaystyle=\beta(1+r)u^{\prime}(c_{t+1})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p9" class="ltx_para">
+<p class="ltx_p">We’ve arrived to the same Euler equation. Again, assume <math id="S3.SS1.SSS2.p9.m1" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> and <math id="S3.SS1.SSS2.p9.m2" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math>. Also assume that <math id="S3.SS1.SSS2.p9.m3" class="ltx_Math" alttext="u(\cdot)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></math> is strictly increasing, strictly concave, and satisfies INADA limit conditions. Then <math id="S3.SS1.SSS2.p9.m4" class="ltx_Math" alttext="c_{t}=c_{t+1}" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math> for all <math id="S3.SS1.SSS2.p9.m5" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>.</p>
+</div>
+<div id="S3.SS1.SSS2.p10" class="ltx_para">
+<p class="ltx_p">We can use lifetime budget constraint to solve for consumption. Let’s start with household that lives <math id="S3.SS1.SSS2.p10.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> periods, then we can evaluate limit as <math id="S3.SS1.SSS2.p10.m2" class="ltx_Math" alttext="T\to\infty" display="inline"><mrow><mi>T</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math> to find expression for consumption in infinite horizon.</p>
+<table id="S3.EGx7" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex24.m1" class="ltx_Math" alttext="\displaystyle c_{t}\sum_{t=0}^{T}\frac{1}{(1+r)^{t}}" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex24.m2" class="ltx_Math" alttext="\displaystyle=a_{0}+\sum_{t=0}^{T}\frac{y_{t}}{(1+r)^{t}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mstyle></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex25.m1" class="ltx_Math" alttext="\displaystyle c_{t}\left(\frac{1-\left(\frac{1}{1+r}\right)^{T+1}}{1-\frac{1}{%
+1+r}}\right)" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex25.m2" class="ltx_Math" alttext="\displaystyle=a_{0}+\sum_{t=0}^{T}\frac{y_{t}}{(1+r)^{t}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mstyle></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Finite horizon:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E1.m2" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E1.m3" class="ltx_Math" alttext="\displaystyle=\underbrace{\left(\frac{\frac{r}{1+r}}{1-\left(\frac{1}{1+r}%
+\right)^{T+1}}\right)\left(a_{0}+\sum_{t=0}^{T}\frac{y_{t}}{(1+r)^{t}}\right)}%
+_{\text{Permanent Income}}" display="inline"><mrow><mi></mi><mo>=</mo><munder><munder accentunder="true"><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>Permanent Income</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+<tbody id="S3.E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Infinite horizon <math id="S3.E2.m1.m1" class="ltx_Math" alttext="T\to\infty" display="inline"><mrow><mi>T</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E2.m2" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E2.m3" class="ltx_Math" alttext="\displaystyle=\underbrace{\left(\frac{r}{1+r}\right)\left(a_{0}+\sum_{t=0}^{%
+\infty}\frac{y_{t}}{(1+r)^{t}}\right)}_{\text{Permanent Income}}" display="inline"><mrow><mi></mi><mo>=</mo><munder><munder accentunder="true"><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mi>t</mi></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>t</mi></msup></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>Permanent Income</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS2.p11" class="ltx_para">
+<p class="ltx_p">We need for <math id="S3.SS1.SSS2.p11.m1" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math> so that geometric series converges. Observe that by assumption that <math id="S3.SS1.SSS2.p11.m2" class="ltx_Math" alttext="\beta=\frac{1}{1+r}" display="inline"><mrow><mi>β</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mrow></math>, <math id="S3.SS1.SSS2.p11.m3" class="ltx_Math" alttext="\frac{r}{1+r}=1-\beta" display="inline"><mrow><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mi>β</mi></mrow></mrow></math>. In both the life-cycle model and permanent income model, we see that household consumes its “permanent income” each period. By permanent income, we mean the annuitized value of the household’s lifetime wealth <cite class="ltx_cite ltx_citemacro_citet">Seater (<a href="#bib.bib3" title="Friedman’s theory of income and consumption" class="ltx_ref">2016</a>)</cite>. This is a fixed fraction of the present value of its total lifetime wealth.</p>
+</div>
+</section>
+<section id="S3.SS1.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.3 </span>Retirement Savings</h4>
+
+<div id="S3.SS1.SSS3.p1" class="ltx_para">
+<p class="ltx_p">The results on finite-horizon presented so far are all consistent for a life-cycle model in which household retires before death (just define deterministic income path such that <math id="S3.SS1.SSS3.p1.m1" class="ltx_Math" alttext="y_{t}=0" display="inline"><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn></mrow></math> during retirement). But let’s explictly consider a household that live <math id="S3.SS1.SSS3.p1.m2" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> periods and works from period 1 to <math id="S3.SS1.SSS3.p1.m3" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math>.</p>
+</div>
+<div id="S3.SS1.SSS3.p2" class="ltx_para">
+<p class="ltx_p">Let’s impose more restrictive simplifying assumptions than before. Assume <math id="S3.SS1.SSS3.p2.m1" class="ltx_Math" alttext="\beta=1" display="inline"><mrow><mi>β</mi><mo>=</mo><mn>1</mn></mrow></math>, <math id="S3.SS1.SSS3.p2.m2" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math> (so <math id="S3.SS1.SSS3.p2.m3" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>), and <math id="S3.SS1.SSS3.p2.m4" class="ltx_Math" alttext="u^{\prime}(\cdot)" display="inline"><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></math> is strictly increasing and concave. Then by Euler equation, <math id="S3.SS1.SSS3.p2.m5" class="ltx_Math" alttext="\bar{c}=c_{t}=c_{t+1}" display="inline"><mrow><mover accent="true"><mi>c</mi><mo>¯</mo></mover><mo>=</mo><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math> for all <math id="S3.SS1.SSS3.p2.m6" class="ltx_Math" alttext="t=1,2,\dots,T" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>T</mi></mrow></mrow></math>. Further assume initial financial wealth <math id="S3.SS1.SSS3.p2.m7" class="ltx_Math" alttext="a_{1}=0" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></math> amd person receives deterministic, constant income <math id="S3.SS1.SSS3.p2.m8" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> while working. Then lifetime budget constraint is</p>
+<table id="S3.EGx8" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex26.m1" class="ltx_Math" alttext="\displaystyle\sum_{t=1}^{T}\bar{c}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover></mstyle><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex26.m2" class="ltx_Math" alttext="\displaystyle=\sum_{t=1}^{N}y" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover></mstyle><mi>y</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex27.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow\bar{c}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex27.m2" class="ltx_Math" alttext="\displaystyle=\underbrace{\frac{Ny}{T}}_{\text{Permanent Income}}" display="inline"><mrow><mi></mi><mo>=</mo><munder><munder accentunder="true"><mstyle displaystyle="true"><mfrac><mrow><mi>N</mi><mo>⁢</mo><mi>y</mi></mrow><mi>T</mi></mfrac></mstyle><mo>⏟</mo></munder><mtext>Permanent Income</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS3.p3" class="ltx_para">
+<p class="ltx_p">To consume permanent income from start of retirement to death, a person must accumulate financial wealth during their working years. Each period, financial wealth increases by <math id="S3.SS1.SSS3.p3.m1" class="ltx_Math" alttext="y-\bar{c}" display="inline"><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></math>. That is, for <math id="S3.SS1.SSS3.p3.m2" class="ltx_Math" alttext="t=1,\dots,N" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></math>,</p>
+<table id="S3.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex28.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}-a_{t}" display="inline"><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>a</mi><mi>t</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex28.m2" class="ltx_Math" alttext="\displaystyle=y-\bar{c}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex29.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow a_{2}-a_{1}=a_{2}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>−</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>=</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex29.m2" class="ltx_Math" alttext="\displaystyle=y-\bar{c}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex30.m1" class="ltx_Math" alttext="\displaystyle a_{3}-a_{2}" display="inline"><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>−</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex30.m2" class="ltx_Math" alttext="\displaystyle=y-\bar{c}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex31.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow a_{3}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><msub><mi>a</mi><mn>3</mn></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex31.m2" class="ltx_Math" alttext="\displaystyle=2(y-\bar{c})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex32.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow a_{t+1}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex32.m2" class="ltx_Math" alttext="\displaystyle=t(y-\bar{c})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mover accent="true"><mi>c</mi><mo>¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex33.m1" class="ltx_Math" alttext="\displaystyle=t\left(y-\frac{Ny}{T}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>y</mi><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><mi>N</mi><mo>⁢</mo><mi>y</mi></mrow><mi>T</mi></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex34"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex34.m1" class="ltx_Math" alttext="\displaystyle=yt\left(\frac{T-N}{T}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>y</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mi>T</mi><mo>−</mo><mi>N</mi></mrow><mi>T</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS3.p4" class="ltx_para">
+<p class="ltx_p">A worker transitions into retirement having accumulated financial wealth <math id="S3.SS1.SSS3.p4.m1" class="ltx_Math" alttext="a_{N+1}=yN\left(\frac{T-N}{T}\right)" display="inline"><mrow><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi>T</mi><mo>−</mo><mi>N</mi></mrow><mi>T</mi></mfrac><mo>)</mo></mrow></mrow></mrow></math>. Retiree continues to consume their permanent income each period, so for <math id="S3.SS1.SSS3.p4.m2" class="ltx_Math" alttext="t=N+1,\dots,T" display="inline"><mrow><mi>t</mi><mo>=</mo><mrow><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>T</mi></mrow></mrow></math>,</p>
+<table id="S3.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex35.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex35.m2" class="ltx_Math" alttext="\displaystyle=yN\left(\frac{T-N}{T}\right)-\frac{yN}{T}(t-N)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mi>T</mi><mo>−</mo><mi>N</mi></mrow><mi>T</mi></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi></mrow><mi>T</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><mi>N</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex36.m1" class="ltx_Math" alttext="\displaystyle=\frac{yNT}{T}-\frac{yN^{2}}{T}-\frac{yNt}{T}+\frac{yN^{2}}{T}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mi>T</mi></mrow><mi>T</mi></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mi>T</mi></mfrac></mstyle><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mi>t</mi></mrow><mi>T</mi></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mi>T</mi></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex37.m1" class="ltx_Math" alttext="\displaystyle=\frac{yN}{T}(T-t)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi></mrow><mi>T</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>−</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS3.p5" class="ltx_para">
+<p class="ltx_p">Altogether, financial wealth as of period <math id="S3.SS1.SSS3.p5.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is</p>
+<table id="S3.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex38.m1" class="ltx_Math" alttext="a_{t+1}=\begin{cases}yt\left(\frac{T-N}{N}\right)&amp;\text{for $t=1,\dots,N$}\\
+\frac{yN}{T}(T-t)&amp;\text{for $t=N+1,\dots,T$}\end{cases}" display="block"><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mrow><mi>T</mi><mo>−</mo><mi>N</mi></mrow><mi>N</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>for </mtext><mrow><mi>t</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mstyle displaystyle="false"><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi></mrow><mi>T</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>−</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>for </mtext><mrow><mi>t</mi><mo>=</mo><mrow><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>T</mi></mrow></mrow></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS3.p6" class="ltx_para">
+<p class="ltx_p">We see that financial wealth is increasing in <math id="S3.SS1.SSS3.p6.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> during working years, and decreasing in <math id="S3.SS1.SSS3.p6.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> in retirement years. Households that seek to smooth consumption save during working years and spend down their savings during retirement. Also note that in period <math id="S3.SS1.SSS3.p6.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, <math id="S3.SS1.SSS3.p6.m4" class="ltx_Math" alttext="a_{T+1}=\frac{yN}{T}(T-T)=0" display="inline"><mrow><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mrow><mi>y</mi><mo>⁢</mo><mi>N</mi></mrow><mi>T</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>−</mo><mi>T</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. Hence, as discussed above, household exhausts all remaining financial wealth in the final period of life.</p>
+</div>
+</section>
+<section id="S3.SS1.SSS4" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.1.4 </span>Summary</h4>
+
+<div id="S3.SS1.SSS4.p1" class="ltx_para">
+<p class="ltx_p">We derived the following results from the case in which household faces deterministic income.</p>
+<ul id="S3.I1" class="ltx_itemize">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">If we impose INADA conditions household’s utility (i.e., utility is strictly increasing and strictly concave), the household’s consumption path is monotone and depends on the relationship between its subjective discount factor <math id="S3.I1.i1.p1.m1" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> and the market discount factor <math id="S3.I1.i1.p1.m2" class="ltx_Math" alttext="\frac{1}{1+r}" display="inline"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></math>.</p>
+<ul id="S3.I1.i1.I1" class="ltx_itemize">
+<li id="S3.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S3.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">If household is more or less patient than the market, it has monotone increasing or decreasing consumption over time.</p>
+</div>
+</li>
+<li id="S3.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S3.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S3.I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>, then household smooths consumption and consumes an equal share of its “permanent income” each period. This holds for any deterministic income path, including one with retirement period at the end of life.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">In the absence of retrictions on borrowing, the timing of income affects savings but does not affect consumption if lifetime wealth is held constant. That is, <em class="ltx_emph ltx_font_italic">consumption increases only if an increase in disposable income is permanent.</em></p>
+</div>
+</li>
+<li id="S3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">In absence of any preference for bequests, finitely-lived households exhaust all financial wealth before they die. This follows from restriction that we do not allow households to die in debt.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>Stochastic Income &amp; Quadratic Preferences</h3>
+
+<section id="S3.SS2.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.2.1 </span>Certainty Equivalence</h4>
+
+<div id="S3.SS2.SSS1.p1" class="ltx_para">
+<p class="ltx_p">In this section, we introduce uncertainty to the income process and maintain a standard expected utility framework. Let’s derive the Euler equation in its general form, then we’ll impose some regularity conditions to compare the stochastic and deterministic cases. At period <math id="S3.SS2.SSS1.p1.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, household maximizes present value of future utility</p>
+<table id="S3.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex39.m1" class="ltx_Math" alttext="\max_{\{c_{j},a_{j+1}\}_{j=0}^{\infty}}\mathbb{E}_{t}\left\{\sum_{j=0}^{\infty%
+}\beta^{j}u(c_{j})\right\}" display="block"><mrow><mrow><munder><mi>max</mi><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>c</mi><mi>j</mi></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">}</mo></mrow><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></munder><mo lspace="0.167em">⁡</mo><msub><mi>𝔼</mi><mi>t</mi></msub></mrow><mo>⁢</mo><mrow><mo>{</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>β</mi><mi>j</mi></msup><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">subject to <math id="S3.SS2.SSS1.p1.m2" class="ltx_Math" alttext="c_{j}+a_{j+1}=(1+r)a_{j}+y_{j}" display="inline"><mrow><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>j</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mrow></math> for all <math id="S3.SS2.SSS1.p1.m3" class="ltx_Math" alttext="j\geq t" display="inline"><mrow><mi>j</mi><mo>≥</mo><mi>t</mi></mrow></math>.</p>
+</div>
+<div id="S3.SS2.SSS1.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S3.SS2.SSS1.p2.m1" class="ltx_Math" alttext="\lambda_{j}" display="inline"><msub><mi>λ</mi><mi>j</mi></msub></math> and <math id="S3.SS2.SSS1.p2.m2" class="ltx_Math" alttext="\lambda_{j+1}" display="inline"><msub><mi>λ</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></math> be budget constraint on period <math id="S3.SS2.SSS1.p2.m3" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math> and <math id="S3.SS2.SSS1.p2.m4" class="ltx_Math" alttext="j+1" display="inline"><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></math> budget constraint. The first-order conditions are</p>
+<table id="S3.EGx11" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex40.m1.m1" class="ltx_Math" alttext="c_{j}" display="inline"><msub><mi>c</mi><mi>j</mi></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex40.m2" class="ltx_Math" alttext="\displaystyle\lambda_{j}" display="inline"><msub><mi>λ</mi><mi>j</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex40.m3" class="ltx_Math" alttext="\displaystyle=\beta^{j}u^{\prime}(c_{j})\Rightarrow\lambda_{j+1}=\beta^{j+1}%
+\mathbb{E}_{j}[u^{\prime}(c_{j+1})]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>β</mi><mi>j</mi></msup><mo>⁢</mo><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>λ</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msup><mi>β</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">wrt <math id="S3.Ex41.m1.m1" class="ltx_Math" alttext="a_{j+1}" display="inline"><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex41.m2" class="ltx_Math" alttext="\displaystyle\lambda_{j}" display="inline"><msub><mi>λ</mi><mi>j</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex41.m3" class="ltx_Math" alttext="\displaystyle=\lambda_{j+1}(1+r)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>λ</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p3" class="ltx_para">
+<p class="ltx_p">This gives Euler equation</p>
+<table id="S3.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex42.m1" class="ltx_Math" alttext="u^{\prime}(c_{j})=\beta(1+r)\mathbb{E}_{j}[u^{\prime}(c_{j+1})]" display="block"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p4" class="ltx_para">
+<p class="ltx_p">Let’s impose two conditions to let us solve for consumption:</p>
+<ul id="S3.I2" class="ltx_itemize">
+<li id="S3.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S3.I2.i1.p1.m1" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> (i.e., subjective discount factor equals market discount factor)</p>
+</div>
+</li>
+<li id="S3.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S3.I2.i2.p1.m1" class="ltx_Math" alttext="u(c)=\alpha c-\cfrac{\gamma c^{2}}{2}" display="inline"><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>c</mi></mrow><mo>−</mo><mfrac><mrow><mi>γ</mi><mo>⁢</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></mrow></math> (i.e., quadratic utility). This implies <math id="S3.I2.i2.p1.m2" class="ltx_Math" alttext="u^{\prime}(c)=\alpha-\gamma c" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S3.SS2.SSS1.p5" class="ltx_para">
+<p class="ltx_p">The Euler equation simplifies to</p>
+<table id="S3.EGx12" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex43"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex43.m1" class="ltx_Math" alttext="\displaystyle u^{\prime}(c_{j})" display="inline"><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex43.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{j}[u^{\prime}(c_{j+1})]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex44"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex44.m1" class="ltx_Math" alttext="\displaystyle\alpha-\gamma c_{j}" display="inline"><mrow><mi>α</mi><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>c</mi><mi>j</mi></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex44.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{j}[\alpha-\gamma c_{j+1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>α</mi><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex45"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex45.m1" class="ltx_Math" alttext="\displaystyle\alpha-\gamma c_{j}" display="inline"><mrow><mi>α</mi><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>c</mi><mi>j</mi></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex45.m2" class="ltx_Math" alttext="\displaystyle=\alpha-\gamma\mathbb{E}_{j}[c_{j+1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>α</mi><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex46"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex46.m1" class="ltx_Math" alttext="\displaystyle c_{j}" display="inline"><msub><mi>c</mi><mi>j</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex46.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{j}[c_{j+1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p6" class="ltx_para">
+<p class="ltx_p">With this simplification, we can use Euler equation and budget constraint to solve for period <math id="S3.SS2.SSS1.p6.m1" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>’s consumption.</p>
+<table id="S3.EGx13" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex47"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Period <math id="S3.Ex47.m1.m1" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex47.m2" class="ltx_Math" alttext="\displaystyle c_{j}+a_{j+1}" display="inline"><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex47.m3" class="ltx_Math" alttext="\displaystyle=(1+r)a_{j}+y_{j}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>j</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex48"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Period <math id="S3.Ex48.m1.m1" class="ltx_Math" alttext="j+1" display="inline"><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex48.m2" class="ltx_Math" alttext="\displaystyle c_{j+1}+a_{j+2}" display="inline"><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex48.m3" class="ltx_Math" alttext="\displaystyle=(1+r)a_{j+1}+y_{j+1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex49.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow a_{j+1}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex49.m2" class="ltx_Math" alttext="\displaystyle=\frac{c_{j+1}+a_{j+2}-y_{j+1}}{1+r}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo>−</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex50"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Period <math id="S3.Ex50.m1.m1" class="ltx_Math" alttext="j+2" display="inline"><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex50.m2" class="ltx_Math" alttext="\displaystyle c_{j+2}+a_{j+3}" display="inline"><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>3</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex50.m3" class="ltx_Math" alttext="\displaystyle=(1+r)a_{j+2}+y_{j+2}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo>+</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex51"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex51.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow a_{j+2}" display="inline"><mrow><mi></mi><mo stretchy="false">⇒</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex51.m2" class="ltx_Math" alttext="\displaystyle=\frac{c_{j+2}+a_{j+3}-y_{j+2}}{1+r}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>3</mn></mrow></msub></mrow><mo>−</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p7" class="ltx_para">
+<p class="ltx_p">Then period <math id="S3.SS2.SSS1.p7.m1" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>’s budget constraint can be rewritten as</p>
+<table id="S3.EGx14" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex52"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex52.m1" class="ltx_Math" alttext="\displaystyle c_{j}+\frac{c_{j+1}+\left(\frac{c_{j+2}+a_{j+3}-y_{j+2}}{1+r}%
+\right)-y_{j+1}}{1+r}" display="inline"><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mo>(</mo><mfrac><mrow><mrow><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>3</mn></mrow></msub></mrow><mo>−</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow></mrow><mo>−</mo><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex52.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{j}+y_{j}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>j</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex53"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex53.m1" class="ltx_Math" alttext="\displaystyle c_{j}+\frac{c_{j+1}}{1+r}+\frac{c_{j+2}}{(1+r)^{2}}+\frac{a_{j+3%
+}}{(1+r)^{2}}" display="inline"><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>a</mi><mrow><mi>j</mi><mo>+</mo><mn>3</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex53.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{j}+y_{j}+\frac{y_{j+1}}{1+r}+\frac{y_{j+2}}{(1+r)^{2}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>j</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>j</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mn>2</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p8" class="ltx_para">
+<p class="ltx_p">Suppose household lives <math id="S3.SS2.SSS1.p8.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> periods. Seeing the pattern, we write remaining lifetime budget constraint as of period <math id="S3.SS2.SSS1.p8.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> as</p>
+<table id="S3.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex54.m1" class="ltx_Math" alttext="\sum_{j=0}^{T}\frac{c_{t+j}}{(1+r)^{j}}+\frac{a_{T+1}}{(1+r)^{T}}=(1+r)a_{t}+%
+\sum_{j=0}^{T}\frac{y_{t+j}}{(1+r)^{j}}" display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mrow><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup></mfrac></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p9" class="ltx_para">
+<p class="ltx_p">In finite horizon problem, because household has no preference for bequests, <math id="S3.SS2.SSS1.p9.m1" class="ltx_Math" alttext="a_{T+1}=0" display="inline"><mrow><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>. In infinite horizon, we assume <math id="S3.SS2.SSS1.p9.m2" class="ltx_Math" alttext="\lim_{T\to\infty}\frac{a_{T+1}}{(1+r)^{T}}=0" display="inline"><mrow><mrow><msub><mo>lim</mo><mrow><mi>T</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="S3.SS2.SSS1.p10" class="ltx_para">
+<p class="ltx_p">Recall that we have only information about stochastic income process up to period <math id="S3.SS2.SSS1.p10.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, so we write remaining lifetime budget constraint as of period <math id="S3.SS2.SSS1.p10.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> as</p>
+<table id="S3.Ex55" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex55.m1" class="ltx_Math" alttext="\mathbb{E}_{t}\sum_{j=0}^{T}\frac{c_{t+j}}{(1+r)^{j}}=(1+r)a_{t}+\mathbb{E}_{t%
+}\sum_{j=0}^{T}\frac{y_{t+j}}{(1+r)^{j}}" display="block"><mrow><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p11" class="ltx_para">
+<p class="ltx_p">In infinite horizon case, remaining lifetime budget constraint as of period <math id="S3.SS2.SSS1.p11.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is</p>
+<table id="S3.EGx15" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex56"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex56.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t}\sum_{j=0}^{\infty}\frac{c_{t+j}}{(1+r)^{j}}=(1+r)a%
+_{t}+\mathbb{E}_{t}\sum_{j=0}^{\infty}\frac{y_{t+j}}{(1+r)^{j}}" display="inline"><mrow><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p12" class="ltx_para">
+<p class="ltx_p">Now we use law of iterated expectation and Euler equation to find expression for <math id="S3.SS2.SSS1.p12.m1" class="ltx_Math" alttext="\mathbb{E}_{t}[c_{t+j}]" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math>. A key fact is that the current expectation of future expectation of future consumption is equal to current expectation.</p>
+<table id="S3.EGx16" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex57"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex57.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t}[c_{t+j}]" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex57.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[\mathbb{E}_{t+j-1}[c_{t+j}]]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>𝔼</mi><mrow><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by LIE</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex58"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex58.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[c_{t+j-1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by Euler equation</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex59"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex59.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[\mathbb{E}_{t+j-2}[c_{t+j-1}]]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>𝔼</mi><mrow><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow><mo>−</mo><mn>2</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by LIE</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex60"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex60.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[c_{t+j-2}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow><mo>−</mo><mn>2</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by Euler equation</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex61"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex61.m1" class="ltx_Math" alttext="\displaystyle=\dots" display="inline"><mrow><mi></mi><mo>=</mo><mi mathvariant="normal">…</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright" colspan="2"></td>
+</tr></tbody>
+<tbody id="S3.Ex62"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex62.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[\mathbb{E}_{t}[c_{t+1}]]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by LIE</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex63"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex63.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t}[c_{t}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">by Euler equation</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex64"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex64.m1" class="ltx_Math" alttext="\displaystyle=c_{t}" display="inline"><mrow><mi></mi><mo>=</mo><msub><mi>c</mi><mi>t</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath"><math id="S3.Ex64.m2.m1" class="ltx_Math" alttext="c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math> is known in period <math id="S3.Ex64.m2.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math></span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p13" class="ltx_para">
+<p class="ltx_p">Observe that we haven’t defined the specific stochastic process for <math id="S3.SS2.SSS1.p13.m1" class="ltx_Math" alttext="y_{t}" display="inline"><msub><mi>y</mi><mi>t</mi></msub></math>. This is a general result that follows from the law of iterated expectation and the Euler equation that we derived by assuming quadratic utility and <math id="S3.SS2.SSS1.p13.m2" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="S3.SS2.SSS1.p14" class="ltx_para">
+<p class="ltx_p">Now we solve for consumption in period <math id="S3.SS2.SSS1.p14.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>:</p>
+<table id="S3.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex65"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex65.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t}\sum_{j=0}^{T}\frac{c_{t+j}}{(1+r)^{j}}" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex65.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+\mathbb{E}_{t}\sum_{j=0}^{T}\frac{y_{t+j}}{(1+r)^{j}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex66"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex66.m1" class="ltx_Math" alttext="\displaystyle c_{t}\cdot\sum_{j=0}^{T}\left(\frac{1}{1+r}\right)^{j}" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mi>j</mi></msup></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex66.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+\mathbb{E}_{t}\sum_{j=0}^{T}\frac{y_{t+j}}{(1+r)^{j}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex67"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex67.m1" class="ltx_Math" alttext="\displaystyle c_{t}\left(\frac{1-\left(\frac{1}{1+r}\right)^{T+1}}{1-\frac{1}{%
+1+r}}\right)" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex67.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+\mathbb{E}_{t}\sum_{j=0}^{T}\frac{y_{t+j}}{(1+r)^{j}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p15" class="ltx_para">
+<p class="ltx_p">So we have expressions for consumption in finite and infinite horizon cases.</p>
+<table id="S3.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Finite horizon:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E3.m2" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E3.m3" class="ltx_Math" alttext="\displaystyle=\underbrace{\left(\frac{\frac{r}{1+r}}{1-\left(\frac{1}{1+r}%
+\right)^{T+1}}\right)\underbrace{\left((1+r)a_{t}+\mathbb{E}_{t}\sum_{j=0}^{T}%
+\frac{y_{t+j}}{(1+r)^{j}}\right)}_{\text{Expected Remaining Lifetime Wealth}}}%
+_{\text{Expected Permanent Income}}" display="inline"><mrow><mi></mi><mo>=</mo><munder><munder accentunder="true"><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><munder><munder accentunder="true"><mrow><mo>(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow><mo>)</mo></mrow><mo>⏟</mo></munder><mtext>Expected Remaining Lifetime Wealth</mtext></munder></mrow><mo>⏟</mo></munder><mtext>Expected Permanent Income</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr></tbody>
+<tbody id="S3.E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Infinite horizon <math id="S3.E4.m1.m1" class="ltx_Math" alttext="T\to\infty" display="inline"><mrow><mi>T</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>:</span></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E4.m2" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E4.m3" class="ltx_Math" alttext="\displaystyle=\underbrace{\left(\frac{r}{1+r}\right)\underbrace{\left((1+r)a_{%
+t}+\mathbb{E}_{t}\sum_{j=0}^{\infty}\frac{y_{t+j}}{(1+r)^{j}}\right)}_{\text{%
+Expected Remaining Lifetime Wealth}}}_{\text{Expected Permanent Income}}" display="inline"><mrow><mi></mi><mo>=</mo><munder><munder accentunder="true"><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><munder><munder accentunder="true"><mrow><mo>(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow><mo>)</mo></mrow><mo>⏟</mo></munder><mtext>Expected Remaining Lifetime Wealth</mtext></munder></mrow><mo>⏟</mo></munder><mtext>Expected Permanent Income</mtext></munder></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS1.p16" class="ltx_para">
+<p class="ltx_p">Under the conditions that <math id="S3.SS2.SSS1.p16.m1" class="ltx_Math" alttext="\beta(1+r)=1" display="inline"><mrow><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> and utility is of quadratic form, household consumes a fixed proportion of its <em class="ltx_emph ltx_font_italic">expected remaining lifetime wealth</em>. We call this fixed proportion the household’s <em class="ltx_emph ltx_font_italic">expected permanent income</em>.</p>
+</div>
+<div id="S3.SS2.SSS1.p17" class="ltx_para">
+<p class="ltx_p">Notice that the consumption behavior is equivalent to consumption behavior in the deterministic case in (<a href="#S3.E1" title="In 3.1.2 Lifetime Budget Constraint &amp; the Consumption Function ‣ 3.1 Deterministic Income: Deriving Euler Equation ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) and (<a href="#S3.E2" title="In 3.1.2 Lifetime Budget Constraint &amp; the Consumption Function ‣ 3.1 Deterministic Income: Deriving Euler Equation ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>). The only difference is that household makes decision based on <em class="ltx_emph ltx_font_italic">expectation</em> of future income instead of a pre-determined income path. For this reason, we describe this result as the <span class="ltx_text ltx_font_bold">certainty equivalence</span>.</p>
+</div>
+<div id="S3.SS2.SSS1.p18" class="ltx_para">
+<p class="ltx_p">Notice also that consumption under quadratic utility depends only on the first moment of income. Later, we consider “precautionary savings” in which consumption behavior depends on higher moments of income. Precautionary savings depends on “prudence,” which is a property of the curvature of marginal utility, or <math id="S3.SS2.SSS1.p18.m1" class="ltx_Math" alttext="u^{\prime\prime\prime}(\cdot)" display="inline"><mrow><msup><mi>u</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow></math>. In the case of quadratic utility, <math id="S3.SS2.SSS1.p18.m2" class="ltx_Math" alttext="u^{\prime\prime\prime}(\cdot)=0" display="inline"><mrow><mrow><msup><mi>u</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, meaning marginal utility is affine. In this case, the agent is said to have no prudence.</p>
+</div>
+</section>
+<section id="S3.SS2.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.2.2 </span>Solving the Consumption and Savings Functions</h4>
+
+<div id="S3.SS2.SSS2.p1" class="ltx_para">
+<p class="ltx_p">With the general formula for consumption under certainty equivalence above, we can explicitly solve for the consumption function for a given income process, whether it be AR(1), <math id="S3.SS2.SSS2.p1.m1" class="ltx_Math" alttext="iid" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></math>, or something else.</p>
+</div>
+<div id="S3.SS2.SSS2.p2" class="ltx_para">
+<p class="ltx_p">In the demonstrations below, suppose income follows an <span class="ltx_text ltx_font_bold">AR(1) process</span>, so <math id="S3.SS2.SSS2.p2.m1" class="ltx_Math" alttext="y_{t+1}=\rho y_{t}+\epsilon_{t+1}" display="inline"><mrow><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math>. We say <math id="S3.SS2.SSS2.p2.m2" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> is persistence parameter and <math id="S3.SS2.SSS2.p2.m3" class="ltx_Math" alttext="\epsilon_{t}" display="inline"><msub><mi>ϵ</mi><mi>t</mi></msub></math> is the “income shock” in period <math id="S3.SS2.SSS2.p2.m4" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>, where <math id="S3.SS2.SSS2.p2.m5" class="ltx_Math" alttext="\mathbb{E}[\epsilon_{t}]=0" display="inline"><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>ϵ</mi><mi>t</mi></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> for all <math id="S3.SS2.SSS2.p2.m6" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>. I highlight two methods for solving for the consumption and savings functions, which give equivalent results.</p>
+</div>
+<div id="S3.SS2.SSS2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Method #1: Brute Force</span></p>
+</div>
+<div id="S3.SS2.SSS2.p4" class="ltx_para">
+<p class="ltx_p">As the name implies, we can solve for the consumption function by plugging in for <math id="S3.SS2.SSS2.p4.m1" class="ltx_Math" alttext="\mathbb{E}_{t}[y_{t+j}]" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mi>j</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math> in our expression for CEQ. Replacing for our AR(1) process, we have:</p>
+<table id="S3.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex68"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex68.m1" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex68.m2" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(\frac{r}{1+r}\right)\left(y_{t}+\frac{\mathbb{E}_{t%
+}[y_{t+1}]}{1+r}+\frac{\mathbb{E}_{t}[\mathbb{E}_{t+1}[y_{t+1}]]}{(1+r)^{2}}+%
+\dots\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex69"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex69.m1" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(\frac{r}{1+r}\right)\left(y_{t}+\frac{\rho y_{t}}{1%
++r}+\frac{\mathbb{E}_{t}[\rho y_{t+1}]}{(1+r)^{2}}+\dots\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex70"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex70.m1" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(\frac{r}{1+r}\right)\left(y_{t}+\frac{\rho y_{t}}{1%
++r}+\frac{\rho^{2}y_{t}}{(1+r)^{2}}+\dots\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex71"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex71.m1" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(\frac{r}{1+r}\right)\left(\sum_{j=0}^{\infty}\left(%
+\frac{\rho}{1+r}\right)^{j}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>ρ</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mi>j</mi></msup></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We’re ensured that <math id="S3.SS2.SSS2.p4.m2" class="ltx_Math" alttext="\frac{\rho}{1+r}&lt;1" display="inline"><mrow><mfrac><mi>ρ</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>&lt;</mo><mn>1</mn></mrow></math> as long as <math id="S3.SS2.SSS2.p4.m3" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math> because <math id="S3.SS2.SSS2.p4.m4" class="ltx_Math" alttext="\rho\in[0,1]" display="inline"><mrow><mi>ρ</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></math>. Evaluating the sum and simplifying, we find that</p>
+<table id="S3.Ex72" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex72.m1" class="ltx_Math" alttext="c_{t}=ra_{t}+\left(\frac{r}{1+r-\rho}\right)y_{t}" display="block"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS2.p5" class="ltx_para">
+<p class="ltx_p">Using the intertemporal budget constraint, we can derive the savings function:</p>
+<table id="S3.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex73"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex73.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex73.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+y_{t}-c_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>−</mo><msub><mi>c</mi><mi>t</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex74"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex74.m1" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+y_{t}-ra_{t}-\left(\frac{r}{1+r-\rho}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>−</mo><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>−</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex75"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex75.m1" class="ltx_Math" alttext="\displaystyle=a_{t}+\left(1-\frac{r}{1+r-\rho}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex76"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex76.m1" class="ltx_Math" alttext="\displaystyle=a_{t}+\left(\frac{1-\rho}{1+r-\rho}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS2.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Method #2: Guess-and-Verify</span></p>
+</div>
+<div id="S3.SS2.SSS2.p7" class="ltx_para">
+<p class="ltx_p">This method is useful in that the same form guess can be used to solve for many forms of income processes (<math id="S3.SS2.SSS2.p7.m1" class="ltx_Math" alttext="iid" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></math>, AR(1), …), as long as the conditions for certainty equivalence hold. Our initial guess has the form <math id="S3.SS2.SSS2.p7.m2" class="ltx_Math" alttext="c_{t}=Aa_{t}+By_{t}+D" display="inline"><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><mi>D</mi></mrow></mrow></math>, where <math id="S3.SS2.SSS2.p7.m3" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> is a some constant that doesn’t depend on assets or income. We need for <math id="S3.SS2.SSS2.p7.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S3.SS2.SSS2.p7.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, and <math id="S3.SS2.SSS2.p7.m6" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> to be time-invariant so <math id="S3.SS2.SSS2.p7.m7" class="ltx_Math" alttext="c_{t+1}=Aa_{t+1}+By_{t+1}+D" display="inline"><mrow><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mi>D</mi></mrow></mrow></math>.</p>
+</div>
+<div id="S3.SS2.SSS2.p8" class="ltx_para">
+<p class="ltx_p">Using the Euler equation, we can solve for <math id="S3.SS2.SSS2.p8.m1" class="ltx_Math" alttext="a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math>:</p>
+<table id="S3.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex77"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex77.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t}[c_{t+1}]" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex77.m2" class="ltx_Math" alttext="\displaystyle=c_{t}" display="inline"><mrow><mi></mi><mo>=</mo><msub><mi>c</mi><mi>t</mi></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex78"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex78.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t}[Aa_{t+1}+By_{t+1}+D]" display="inline"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mi>D</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex78.m2" class="ltx_Math" alttext="\displaystyle=Aa_{t}+By_{t}+D" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><mi>D</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex79"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex79.m1" class="ltx_Math" alttext="\displaystyle Aa_{t+1}+B\mathbb{E}_{t}[y_{t+1}]+D" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mi>D</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex79.m2" class="ltx_Math" alttext="\displaystyle=Aa_{t}+By_{t}+D" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><mi>D</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex80"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex80.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex80.m2" class="ltx_Math" alttext="\displaystyle=a_{t}+\frac{B}{A}\left(y_{t}-\mathbb{E}_{t}[y_{t+1}]\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mi>B</mi><mi>A</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Continuining our example of AR(1) income process: <math id="S3.SS2.SSS2.p8.m2" class="ltx_Math" alttext="y_{t+1}=\rho y_{t}+\epsilon_{t+1}" display="inline"><mrow><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math>, <math id="S3.SS2.SSS2.p8.m3" class="ltx_Math" alttext="\mathbb{E}[\epsilon_{t+1}]=0" display="inline"><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. Then</p>
+<table id="S3.Ex81" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex81.m1" class="ltx_Math" alttext="a_{t+1}=a_{t}+\frac{B}{A}(1-\rho)y_{t}" display="block"><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mfrac><mi>B</mi><mi>A</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS2.p9" class="ltx_para">
+<p class="ltx_p">Replacing for <math id="S3.SS2.SSS2.p9.m1" class="ltx_Math" alttext="a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math> in the intertemporal budget constraint, we have</p>
+<table id="S3.EGx22" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex82"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex82.m1" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex82.m2" class="ltx_Math" alttext="\displaystyle=(1+r)a_{t}+y_{t}-a_{t}-\frac{B}{A}(1-\rho)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>−</mo><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mi>B</mi><mi>A</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex83"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex83.m1" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(1-\frac{B(1-\rho)}{A}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>A</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus <math id="S3.SS2.SSS2.p9.m2" class="ltx_Math" alttext="A=r" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>r</mi></mrow></math>, and <math id="S3.SS2.SSS2.p9.m3" class="ltx_Math" alttext="B=\frac{r-B(1-\rho)}{r}\Rightarrow B(1+r-\rho)=r\Rightarrow B=\frac{r}{1+r-\rho}" display="inline"><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><mi>r</mi><mo>−</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>r</mi></mfrac><mo stretchy="false">⇒</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>r</mi><mo stretchy="false">⇒</mo><mi>B</mi><mo>=</mo><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mrow></math>. Finally, <math id="S3.SS2.SSS2.p9.m4" class="ltx_Math" alttext="D=0" display="inline"><mrow><mi>D</mi><mo>=</mo><mn>0</mn></mrow></math>. Our coefficients are time-invariant and independent of assets, income, and consumption, so we’ve solved the consumption function and savings function:</p>
+<table id="S3.EGx23" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex84"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex84.m1" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex84.m2" class="ltx_Math" alttext="\displaystyle=ra_{t}+\left(\frac{r}{1+r-\rho}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex85"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex85.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex85.m2" class="ltx_Math" alttext="\displaystyle=a_{t}+\left(\frac{1-\rho}{1+r-\rho}\right)y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which matches our result above derived using the “brute force” method.</p>
+</div>
+<div id="S3.SS2.SSS2.p10" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Exercise.</span> Assume the conditions for certainty equivalence hold. Derive the consumption and savings functions for the following <math id="S3.SS2.SSS2.p10.m1" class="ltx_Math" alttext="iid" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></math> income process using brute force and guess-and-verify:</p>
+<table id="S3.Ex86" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex86.m1" class="ltx_Math" alttext="y_{t}=\begin{cases}y_{h}&amp;\text{with probability $p_{h}\in(0,1)$}\\
+y_{l}&amp;\text{with probability $p_{l}$}\end{cases}" display="block"><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><msub><mi>y</mi><mi>h</mi></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>with probability </mtext><mrow><msub><mi>p</mi><mi>h</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><msub><mi>y</mi><mi>l</mi></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>with probability </mtext><msub><mi>p</mi><mi>l</mi></msub></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="S3.SS2.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">3.2.3 </span>“Income Shocks” &amp; Changes in Consumption</h4>
+
+<div id="S3.SS2.SSS3.p1" class="ltx_para">
+<p class="ltx_p">Consumption is related to income through two separate channels. First, a change in income affects the resources available to the household in the present period. Second, it provides <em class="ltx_emph ltx_font_italic">information</em> to the household about its expectation of future income.</p>
+</div>
+<div id="S3.SS2.SSS3.p2" class="ltx_para">
+<table id="S3.EGx24" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex87"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex87.m1" class="ltx_Math" alttext="\displaystyle\Delta c_{t+1}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex87.m2" class="ltx_Math" alttext="\displaystyle=c_{t+1}-c_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>c</mi><mi>t</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex88"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex88.m1" class="ltx_Math" alttext="\displaystyle=c_{t+1}-\mathbb{E}_{t}[c_{t+1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex89"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex89.m1" class="ltx_Math" alttext="\displaystyle=ra_{t+1}+\left(\frac{r}{1+r}\right)\mathbb{E}_{t+1}\sum_{j=0}^{%
+\infty}\frac{y_{t+1+j}}{(1+r)^{j}}-\mathbb{E}_{t}\left\{ra_{t+1}+\left(\frac{r%
+}{1+r}\right)\mathbb{E}_{t+1}\sum_{j=0}^{\infty}\frac{y_{t+1+j}}{(1+r)^{j}}\right\}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo>{</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow></mrow><mo>}</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex90"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex90.m1" class="ltx_Math" alttext="\displaystyle=ra_{t+1}-ra_{t+1}+\left(\frac{r}{1+r}\right)\left\{\mathbb{E}_{t%
++1}\sum_{j=0}^{\infty}\frac{y_{t+1+j}}{(1+r)^{j}}-\underbrace{\mathbb{E}_{t}%
+\mathbb{E}_{t+1}\sum_{j=0}^{\infty}\frac{y_{t+1+j}}{(1+r)^{j}}}_{\text{Apply %
+LIE}}\right\}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>{</mo><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow><mo>−</mo><munder><munder accentunder="true"><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow></mrow><mo>⏟</mo></munder><mtext>Apply LIE</mtext></munder></mrow><mo>}</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E5.m1" class="ltx_Math" alttext="\displaystyle=\left(\frac{r}{1+r}\right)\left\{\sum_{j=0}^{\infty}\frac{%
+\mathbb{E}_{t+1}y_{t+1+j}-\mathbb{E}_{t}y_{t+1+j}}{(1+r)^{j}}\right\}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>{</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>j</mi></mrow></msub></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mi>j</mi></msup></mfrac></mstyle></mrow><mo>}</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS3.p3" class="ltx_para">
+<p class="ltx_p">Equation (<a href="#S3.E5" title="In 3.2.3 “Income Shocks” &amp; Changes in Consumption ‣ 3.2 Stochastic Income &amp; Quadratic Preferences ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>) tells us that the change in consumption depends on the realized value of income and the information that is gained between periods <math id="S3.SS2.SSS3.p3.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> and <math id="S3.SS2.SSS3.p3.m2" class="ltx_Math" alttext="t+1" display="inline"><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></math>. Depending on the properties of the income process, the realization of <math id="S3.SS2.SSS3.p3.m3" class="ltx_Math" alttext="y_{t+1}" display="inline"><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math> causes a change in household’s expectation of its <em class="ltx_emph ltx_font_italic">entire</em> future income stream.</p>
+</div>
+<div id="S3.SS2.SSS3.p4" class="ltx_para">
+<p class="ltx_p">Continuing with our example of AR(1) income process, at <math id="S3.SS2.SSS3.p4.m1" class="ltx_Math" alttext="j=0" display="inline"><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="S3.EGx25" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex91"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex91.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t+1}y_{t+1}-\mathbb{E}_{t}y_{t+1}" display="inline"><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex91.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t+1}[\rho y_{t}+\epsilon_{t+1}]-\mathbb{E}_{t}[\rho y%
+_{t}+\epsilon_{t+1}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex92"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex92.m1" class="ltx_Math" alttext="\displaystyle=\rho y_{t}+\epsilon_{t+1}-\rho y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex93"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex93.m1" class="ltx_Math" alttext="\displaystyle=\epsilon_{t+1}" display="inline"><mrow><mi></mi><mo>=</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">And at <math id="S3.SS2.SSS3.p4.m2" class="ltx_Math" alttext="j=1" display="inline"><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow></math>,</p>
+<table id="S3.EGx26" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex94"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex94.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}_{t+1}y_{t+2}-\mathbb{E}_{t}y_{t+2}" display="inline"><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex94.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t+1}[\rho y_{t+1}+\epsilon_{t+2}]-\mathbb{E}_{t}[%
+\rho y_{t+1}+\epsilon_{t+2}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex95"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex95.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{E}_{t+1}[\rho(\rho y_{t}+\epsilon_{t+1})+\epsilon_{t+2}]%
+-\mathbb{E}_{t}[\rho(\rho y_{t}+\epsilon_{t+1})+\epsilon_{t+2}]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>𝔼</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>𝔼</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>2</mn></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex96"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex96.m1" class="ltx_Math" alttext="\displaystyle=\rho^{2}y_{t}+\rho\epsilon_{t+1}-\rho^{2}y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>−</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex97"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex97.m1" class="ltx_Math" alttext="\displaystyle=\rho\epsilon_{t+1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS3.p5" class="ltx_para">
+<p class="ltx_p">Observing the pattern, we have</p>
+<table id="S3.EGx27" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex98"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex98.m1" class="ltx_Math" alttext="\displaystyle\Delta c_{t+1}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex98.m2" class="ltx_Math" alttext="\displaystyle=\left(\frac{r}{1+r}\right)\left(\epsilon_{t+1}+\frac{\rho%
+\epsilon_{t+1}}{1+r}+\dots\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex99"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex99.m1" class="ltx_Math" alttext="\displaystyle=\frac{r}{1+r}\cdot\epsilon_{t+1}\sum_{j=0}^{\infty}\left(\frac{%
+\rho}{1+r}\right)^{j}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>ρ</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mi>j</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex100"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex100.m1" class="ltx_Math" alttext="\displaystyle=\frac{r}{1+r}\cdot\epsilon_{t+1}\left(\frac{1}{1-\frac{\rho}{1+r%
+}}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mfrac><mi>ρ</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex101"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex101.m1" class="ltx_Math" alttext="\displaystyle=\frac{r}{1+r}\cdot\epsilon_{t+1}\cdot\frac{1+r}{1+r-\rho}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex102"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex102.m1" class="ltx_Math" alttext="\displaystyle=\left(\frac{r}{1+r-\rho}\right)\epsilon_{t+1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS2.SSS3.p6" class="ltx_para">
+<p class="ltx_p">Consider two extreme cases. If <math id="S3.SS2.SSS3.p6.m1" class="ltx_Math" alttext="\rho=1" display="inline"><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn></mrow></math>, income follows a “random walk”, and <math id="S3.SS2.SSS3.p6.m2" class="ltx_Math" alttext="\Delta c_{t+1}=\epsilon_{t+1}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math>. In words, household consumes income shock entirely when household faces “permanent income shocks.“ Meanwhile, if <math id="S3.SS2.SSS3.p6.m3" class="ltx_Math" alttext="\rho=0" display="inline"><mrow><mi>ρ</mi><mo>=</mo><mn>0</mn></mrow></math>, and income process is <math id="S3.SS2.SSS3.p6.m4" class="ltx_Math" alttext="iid" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></math>, then <math id="S3.SS2.SSS3.p6.m5" class="ltx_Math" alttext="\Delta c_{t+1}=\left(\frac{r}{1+r}\right)\epsilon_{t+1}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math>. In this case, shocks are completely temporary, so household converts shock into annuity and spreads the shock over future periods.</p>
+</div>
+<div id="S3.SS2.SSS3.p7" class="ltx_para">
+<p class="ltx_p">Notice that we can derive this same result using the consumption and savings functions derived using “brute force” and “guess-and-verify” above:</p>
+<table id="S3.EGx28" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex103"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex103.m1" class="ltx_Math" alttext="\displaystyle c_{t}" display="inline"><msub><mi>c</mi><mi>t</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex103.m2" class="ltx_Math" alttext="\displaystyle=ra_{t}+\frac{r}{1+r-\rho}y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex104"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex104.m1" class="ltx_Math" alttext="\displaystyle a_{t+1}" display="inline"><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex104.m2" class="ltx_Math" alttext="\displaystyle=a_{t}+\frac{1-\rho}{1+r-\rho}y_{t}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus</p>
+<table id="S3.EGx29" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.Ex105"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex105.m1" class="ltx_Math" alttext="\displaystyle\Delta c_{t+1}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex105.m2" class="ltx_Math" alttext="\displaystyle=r(a_{t+1}-a_{t})+\frac{r}{1+r-\rho}\left(\rho y_{t}+\epsilon_{t+%
+1}-y_{t}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>a</mi><mi>t</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mi>ρ</mi><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex106"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex106.m1" class="ltx_Math" alttext="\displaystyle=\frac{r(1-\rho)}{1+r-\rho}y_{t}-\frac{r(1-\rho)}{1+r-\rho}y_{t}+%
+\frac{r}{1+r-\rho}\epsilon_{t+1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S3.Ex107"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex107.m1" class="ltx_Math" alttext="\displaystyle=\left(\frac{r}{1+r-\rho}\right)\epsilon_{t+1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mrow><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>−</mo><mi>ρ</mi></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msub><mi>ϵ</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which matches our result above.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul id="bib.L1" class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem ltx_bib_book">
+<span class="ltx_tag ltx_bib_author-year ltx_role_refnum ltx_tag_bibitem">J. Adda and R. Cooper (2003)</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">Dynamic economics: quantitative methods &amp; applications</span>.
+</span>
+<span class="ltx_bibblock"> <span class="ltx_text ltx_bib_publisher">MIT Press</span>, <span class="ltx_text ltx_bib_place">Cambridge, MA</span>.
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#footnote1" title="In 3.1.1 Intertemporal Budget Constraint ‣ 3.1 Deterministic Income: Deriving Euler Equation ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">footnote 1</span></a>.
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem ltx_bib_incollection">
+<span class="ltx_tag ltx_bib_author-year ltx_role_refnum ltx_tag_bibitem">O. P. Attanasio (1999)</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">Consumption</span>.
+</span>
+<span class="ltx_bibblock">In <span class="ltx_text ltx_bib_inbook">Handbook of Macroeconomics</span>,  <span class="ltx_text ltx_bib_editor">J. B. Taylor and M. Woodford (Eds.)</span>,
+</span>
+<span class="ltx_bibblock">Vol. <span class="ltx_text ltx_bib_volume">1B</span>.
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S2.p1" title="2 Stylized facts about consumption ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2</span></a>.
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem ltx_bib_incollection">
+<span class="ltx_tag ltx_bib_author-year ltx_role_refnum ltx_tag_bibitem">J. J. Seater (2016)</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">Friedman’s theory of income and consumption</span>.
+</span>
+<span class="ltx_bibblock">In <span class="ltx_text ltx_bib_inbook">Milton Friedman: Contributions to Economics and Public Policy</span>,  <span class="ltx_text ltx_bib_editor">R. A. Cord and J. D. Hammond (Eds.)</span>,
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S3.SS1.SSS2.p11" title="3.1.2 Lifetime Budget Constraint &amp; the Consumption Function ‣ 3.1 Deterministic Income: Deriving Euler Equation ‣ 3 The life cycle and permanent income models ‣ Notes on the Theory of Consumption &amp; Savings" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.1.2</span></a>.
+</span>
+</li>
+</ul>
+</section><div class="ltx_rdf" about="" property="dcterms:creator" content="Michael Kotrous"></div>
+<div class="ltx_rdf" about="" property="dcterms:title" content="Notes on the Theory of Consumption &amp; Savings"></div>
+
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Thu Apr 30 22:32:56 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>

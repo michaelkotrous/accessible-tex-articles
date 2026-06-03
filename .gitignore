@@ -1,0 +1,28 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# latexmk cleanup
+*.dvi
+*.xdv
+
+# Temporary/editor files
+*.tmp
+*.bak
+*~
+.DS_Store
+

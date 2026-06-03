@@ -1,0 +1,77 @@
+\DocumentMetadata{
+    pdfstandard = ua-2,
+    lang=en-US,
+    tagging=on,
+    tagging-setup={math/setup=mathml-SE}
+}
+\documentclass[11pt]{article}
+
+\input{kotrous_article_preamble}
+
+% line numbers (for review drafts)
+\usepackage{lineno}
+\linenumbers
+
+% biblatex bibliography (skip if using latexml to produce HTML5 or ePub version)
+\ifnotlatexml
+\addbibresource{references/*.bib}
+\fi
+
+% fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% header
+\lhead{}
+\chead{} 
+\rhead{}
+% footer
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% article metadata
+\hypersetup{
+    pdftitle   = {},
+    pdfauthor  = {Michael Kotrous}
+}
+\title{}
+\author[1]{Michael Kotrous\thanks{Email: michael.kotrous@uga.edu}}
+\affil[1]{John Munro Godfrey, Sr. Department of Economics\\University of Georgia}
+\date{}
+
+\begin{document}
+
+% title page
+\thispagestyle{empty}
+
+\maketitle
+
+\vspace{-2em}
+
+\begin{abstract}
+    \noindent 
+\end{abstract}
+
+JEL Codes:
+
+\newpage
+\setcounter{page}{1}
+
+% content here
+
+
+% references page
+% if producing PDF, use biblatex
+\ifnotlatexml
+\printbibliography
+\else
+% if producing HTML5 or ePub using latexml, use natbib
+\bibliographystyle{plainnat}
+\bibliography{references/*.bib}
+\fi
+
+\end{document}
+
+
+
+

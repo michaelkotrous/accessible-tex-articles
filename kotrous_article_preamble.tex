@@ -1,0 +1,124 @@
+% VERSION 05/14/2026
+% indicator to skip certain packages when converting to HTML5 / ePub
+\newif\ifnotlatexml
+\ifdefined\latexml
+  \notlatexmlfalse
+\else
+  \notlatexmltrue
+\fi
+
+% format margins and text areas
+\usepackage[margin=1in]{geometry}
+
+% configure fonts for PDF exports
+\ifnotlatexml
+\usepackage{fontspec}
+\setmainfont{Source Serif 4}[
+    UprightFont = * Regular,
+    ItalicFont = * Italic,
+    BoldFont = * Semibold,
+    BoldItalicFont = * Semibold Italic
+]
+\setsansfont{Source Sans 3}[
+    UprightFont = * Regular,
+    ItalicFont = * Italic,
+    BoldFont = * Semibold,
+    BoldItalicFont = * Semibold Italic
+]
+\setmonofont{Source Code Pro}[
+  UprightFont = * Regular,
+  ItalicFont = * Italic,
+  BoldFont = * Semibold,
+  BoldItalicFont = * Semibold Italic
+]
+\fi
+
+% format text spacing
+\usepackage{setspace}
+\setstretch{1.3}
+
+% Adjust line spread and font family inside "pull quotes"
+\usepackage{csquotes}
+\newenvironment{pullquote}[1][]%
+  {\begin{displayquote}[#1]\begin{spacing}{1.0}\sffamily}%
+  {\end{spacing}\end{displayquote}}
+
+% Tidy Author Affiliation, Contact and Acknowledgements
+\usepackage{authblk}
+
+% Bibliography
+\ifnotlatexml
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\else
+\usepackage[authoryear]{natbib}
+\newcommand{\textcite}{\citet}
+\newcommand{\parencite}{\citep}
+\fi
+
+% write math and define operators
+\usepackage{mathtools}
+\ifnotlatexml
+\usepackage{unicode-math}
+\setmathfont{NewComputerModernMath}
+\setmathfont{NewComputerModernMath}[range=\mathbb]
+\newcommand{\indicator}{\mathbb{1}}
+\else
+\usepackage{amsfonts, amssymb, dsfont}
+\newcommand{\indicator}{\mathds{1}}
+\fi
+
+% images and figures
+\usepackage{graphicx, subcaption}
+
+% custom colors
+\usepackage{xcolor}
+
+% define colorblind-friendly palette
+\definecolor{cb1}{HTML}{56B4E9}
+\definecolor{cb2}{HTML}{E69F00}
+\definecolor{cb3}{HTML}{009E73}
+\definecolor{cb4}{HTML}{0072B2}
+\definecolor{cb5}{HTML}{D55E00}
+\definecolor{cb6}{HTML}{CC79A7}
+\definecolor{cb7}{HTML}{999999}
+\definecolor{cb8}{HTML}{F0E442}
+
+% links
+\usepackage{hyperref}
+\definecolor{url}{HTML}{2a7f9e}
+\hypersetup{
+  colorlinks = true,
+  linkcolor = black,
+  filecolor = black,
+  urlcolor = url,
+  citecolor = url
+}
+
+% nice enumerate environments
+\usepackage{enumitem}
+
+% tables
+\usepackage{booktabs, longtable, threeparttable}
+\usepackage{lscape} % landscape tables
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\ifnotlatexml
+\usepackage{siunitx} % align on decimal place
+\sisetup{input-ignore={,},
+         input-decimal-markers={.},
+         group-separator={,},
+         group-minimum-digits=4,
+         table-align-text-post = false,
+         table-align-text-pre = false
+}
+\fi
+
+% draw tikz pictures
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+
+
+

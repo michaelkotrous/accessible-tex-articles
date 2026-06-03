@@ -1,0 +1,491 @@
+\DocumentMetadata{
+    pdfstandard = ua-2,
+    lang=en-US,
+    tagging=on,
+    tagging-setup={math/setup=mathml-SE}
+}
+\documentclass[11pt]{article}
+
+\input{../../kotrous_article_preamble}
+
+% line numbers (for review drafts)
+\usepackage{lineno}
+%\linenumbers
+
+% biblatex bibliography (skip if using latexml to produce HTML5 or ePub version)
+\ifnotlatexml
+\addbibresource{references/prudence.bib}
+\fi
+
+% fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% header
+\lhead{Kotrous} 
+\chead{Precautionary Savings \& Prudence} 
+\rhead{March 18, 2026}
+% footer
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% article metadata
+\hypersetup{
+    pdftitle   = {Precautionary Savings and Prudence},
+    pdfauthor  = {Michael Kotrous}
+}
+\title{Precautionary Savings and Prudence}
+\author[1]{Michael Kotrous\thanks{Email: michael.kotrous@uga.edu}}
+\affil[1]{John Munro Godfrey, Sr. Department of Economics\\University of Georgia}
+\date{March 18, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction \label{sec:introduction}}
+
+\textbf{Precautionary savings} is the portion of savings that is induced by risk over future endowments, income, or consumption. Precautionary savings are positively correlated with the variance of the stochastic processes that determine the resources available to an agent, holding fixed their mean. The strength of the precautionary savings motive is determined by the curvature of the marginal utility curve. If the marginal utility is convex (and thus ``steep'' at low values of consumption), the agent is strongly incentivized to accumulate assets in order to avoid periods in which the agent's state of available assets and present realization of endowments can afford only a small consumption. The precautionary savings motive in consumption-savings models has been known since \textcite{Leland1968}. Understanding the strength of the precautionary savings motive was advanced by \textcite{Kimball1990}, who formalized the concept by introducing the coefficients of ``absolute prudence'' (AP) and ``relative prudence'' (RP), which he defined as:
+\begin{align*}
+    AP(c) \coloneqq \frac{-u'''(c)}{u''(c)} \\
+    RP(c) \coloneqq \frac{-u'''(c)}{u''(c)} \times c
+\end{align*}
+
+These coefficients of ``prudence,'' analogous to the Arrow-Pratt coefficients of absolute and relative risk aversion,\footnote{For discussion on how prudence and risk aversion are related and distinguished, see Section \ref{sec:prudence vs aversion}.} provide an index to judge the strength of prudence across agents or classes of preferences. Holding the level of consumption fixed, the precautionary savings motive is strictly increasing in the coefficients of absolute and relative prudence. When absolute and relative prudence equal zero, an agent has no precautionary savings motive.
+\begin{figure}[h!]
+    \centering
+    \ifnotlatexml
+    \tagstructbegin{tag=Figure, alttext={{Figure 1 The Role of Prudence in Determining Optimal Consumption. The figure is a panel with two diagrams exhibiting how the curvature of marginal utility affects consumption and savings. The left panel shows a strictly convex marginal utility function that has strictly positive prudence. The right panel shows a linear marginal utility function that has zero prudence.}}}
+    \fi
+    \begin{subfigure}[b]{0.47\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=1.2]
+            % align two diagrams by putting x-axes on same vertical and centering x-axes over subcaptions
+            \path[use as bounding box] (0,-1) rectangle (4.25,4.25);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,4.25) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            %\node [below] at (0.5,0) {$c_{t+1}^L$};
+            \node [left] at (0.7,-0.3) {$c_{t+1}^L$};
+            \node [below] at (2,0) {$\bar{c}_{t+1}$};
+            \node [below] at (3,0) {$c_{t+1}^H$};
+
+            % draw chord for expected MU
+            \draw[thick] (0.5,2.14354693) -- (3.5,0.25207232);
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,1.19780962) node[left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,1.19780962)--(2,0) node[below] {$\bar{c}_{t+1}$};
+
+            \draw[dashed](0,0.4665165) node[left]{$u'(\bar c_{t+1})$} -- (2,0.4665165);
+
+            % MU curve
+            % U(c; s) = (c^(1-s) - 1)/(1-s)
+            % u'(c; s) = c^(-s)
+            % Calibration: s = 1.1
+            \draw[cb5, very thick] plot[domain=0.28:4] (\x, \x^-1.1);
+
+            % Put dot on optimal bundle
+            \draw[dashed](0.84866905,1.19780962) -- (0.84866905,0) node[below]{$c_t^*$};
+            \filldraw[black] (0.84866905,1.19780962) circle (2pt);
+            \filldraw[black] (2,1.19780962) circle (2pt);
+            \filldraw[black] (2,0.4665165) circle (2pt);
+            \draw[dashed](0.5,2.14354693) -- (0.5,0);
+            \filldraw[black] (0.5,2.14354693) circle (2pt);
+            \draw[dashed](3.5,0.25207232) -- (3.5,0);
+            \filldraw[black] (3.5,0.25207232) circle (2pt);
+
+            % Brace showing precautionary saving
+            \draw[
+                decorate,
+                decoration={brace, mirror, amplitude=5pt},
+                yshift=-15pt
+            ] (0.84866905,0) -- (2,0) 
+            node[midway, below=4pt, align=center]{\scriptsize Precautionary Saving};
+        \end{tikzpicture}
+        \caption{Strictly Positive Prudence \label{fig:prudence convex mu}}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.47\textwidth}
+        \centering
+        \begin{tikzpicture}[xscale=1.2, yscale=4.8]
+            \path[use as bounding box] (0,-0.25) rectangle (4.25,1.0625);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,1.0625) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            \node [below] at (0.5,0) {$c_{t+1}^L$};
+            \node [below] at (3.5,0) {$c_{t+1}^H$};
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,0.4665164) node[left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,0.4665164)--(2,0) node[below] {$c_t^*=\bar{c}_{t+1}$};
+
+            % MU curve
+            % U(c; a, b) = ac - (b/2)*c^2
+            % u'(c; a, b) = a - b*c
+            % u'(c; a, b) = -b
+            % Quadratic MU line chosen to match CRRA u'(2) and u''(2) when sigma=1.1 and \bar c = 2
+            % u'(c) = a - b c, with a = 0.9796846, b = 0.2565841
+            \draw[cb5, very thick] plot[domain=0.2:3.7] (\x, {0.9796846 - 0.2565841*\x});
+
+            % Put dots and lines
+            \node[circle, fill=black, inner sep=2pt] at (2,0.4665164) {};
+            \draw[dashed](0.5,0.85139255) -- (0.5,0);
+            \node[circle, fill=black, inner sep=2pt] at (0.5,0.85139255) {};
+            \draw[dashed](3.5,0.08164025) -- (3.5,0);
+            \node[circle, fill=black, inner sep=2pt] at (3.5,0.08164025) {};
+        \end{tikzpicture}
+        \caption{Zero Prudence \label{fig:prudence linear mu}}
+    \end{subfigure}
+    \caption{The Role of Prudence in Determining Optimal Consumption \label{fig:prudence}}
+    \ifnotlatexml
+    \tagstructend
+    \fi
+\end{figure}
+
+
+As is clear from the definitions above, prudence is determined by the convexity of the marginal utility curve (i.e., a positive third derivative of the utility function). Figure \ref{fig:prudence} demonstrates how the convexity of the marginal utility function affects the strength of the precautionary savings motive with a stylized example. Suppose there are two possible states of consumption in the next period $t+1$, $c_{t+1}^H$ and $c_{t+1}^L$, with $c_{t+1}^H > c_{t+1}^L$. Assume that the probability of high consumption is given by $p \in (0,1)$. Define $\bar{c}_{t+1} = p c_{t+1}^H + (1-p)c_{t+1}^L$, which equals the expected value of next period's consumption.
+
+In Figure \ref{fig:prudence convex mu}, we assume the agent has preferences represented by a utility function \(u(c)\) that is strictly concave (i.e., \(u''(c) < 0\)) and has strictly convex marginal utility (i.e., \(u'''(c) > 0\)). Thus, the coefficients of absolute and relative prudence are strictly positive. The marginal utility of consumption at the expected value of consumption, \(u(\bar c_{t+1})\), falls along the marginal utility curve between \(u'(c_{t+1}^H)\) and \(u'(c_{t+1}^L)\). Meanwhile, the mean marginal utility of consumption falls on a chord between \(u'(c_{t+1}^H)\) and \(u'(c_{t+1}^L)\). The exact position of the expected marginal utility along the chord depends on \(p\). Convexity of marginal utility ensures that the expected marginal utility of consumption exceeds the marginal utility of consumption evaluated at the expected value of consumption. That is,
+\begin{align}
+    p u'(c_{t+1}^H) + (1-p) u'(c_{t+1}^L) &> u'\left[p c_{t+1}^H + (1-p)c_{t+1}^L\right] \nonumber \\
+    \mathbb{E}_t\!\left[u'(c_{t+1})\right] &> u'(\bar c_{t+1}) \label{eqn:jensens}
+\end{align}
+This property of convex functions is an application of \textbf{Jensen's inequality}.
+
+To determine how the precautionary savings motive affects the agent's optimal choice of consumption and savings, consider the Euler equation that characterizes the intertemporal trade-off between present and future consumption. Assume that the agent discounts the utility of future consumption according to the discount factor $\beta$, receives a gross return $R$ on savings, and, to simplify the analysis, $\beta R = 1$.\footnote{The simplifying assumption $\beta R = 1$ eliminates the deterministic consumption-tilting motive and isolates the precautionary savings channel. The logic of the argument does not depend on this normalization.} The Euler equation is given by:
+\begin{align}
+    u'(c_t^*) &\;=\; \mathbb{E}_t\!\left[u'(c_{t+1}^*)\right] \label{eqn:euler} \\
+    &\;=\; p u'(c_{t+1}^H) + (1-p) u'(c_{t+1}^L) \nonumber \\
+    &\;>\; u'\left[p c_{t+1}^H + (1-p)c_{t+1}^L\right] \nonumber \\
+    &\;=\; u'(\bar c_{t+1}) \nonumber
+\end{align}
+where the strict inequality follows by \eqref{eqn:jensens}. In Figure \ref{fig:prudence convex mu}, we identify the optimal consumption by finding the point along the consumption axis that equates the marginal utility of present consumption to the expected value of marginal utility of future consumption. This level of consumption is denoted in the diagram as $c_t^*$. 
+
+By \eqref{eqn:euler}, $u'(c_t^*) \;>\; \,u'(\bar c_{t+1})$. Thus, the marginal utility of optimal present consumption exceeds the marginal utility of consuming expected future consumption. Because marginal utility is strictly decreasing, this implies that present consumption is lower when (i) the agent has preferences with convex marginal utility and (ii) faces variance in endowments that makes their consumption risky. The additional saving that results from this decrease in present consumption is what we call precautionary savings. The amount of savings that is precautionary equals the distance between $\bar{c}_{t+1}$ and $c_t^*$ in Figure \ref{fig:prudence convex mu}.
+
+Figure \ref{fig:prudence linear mu} demonstrates how precautionary savings disappears in the absence of prudence. When an agent has preferences that are represented by a utility function that admits linear marginal utility,\footnote{See Section \ref{sec:quadratic utility} on the class of quadratic utility functions.} the coefficients of relative and absolute prudence equal zero. When identifying the level of consumption that satisfies the Euler equation in \eqref{eqn:euler}, it is immediately clear that this point corresponds exactly with the expected value of future consumption.
+
+Let $u'(c; a,b) = a - bc$, with $b > 0$ and $a$ sufficiently large so that $u'(c; a,b) > 0$ for all feasible $c$. Plugging this into the Euler, we have
+\begin{align*}
+    u'(c_t^*; a, b) &= \mathbb{E}_t\!\left[a - bc_{t+1}\right] \\
+    &= a - b \mathbb{E}_t\!\left[c_{t+1}\right] \\
+    &= a - b \bar{c}_{t+1} \\
+    &= u'(\bar{c}_{t+1}; a, b)
+\end{align*}
+
+Notice that the assumed marginal utility function is strictly decreasing in consumption. Thus, $c_t^* = \bar{c}_{t+1}$. The agent's optimal present consumption equals the expected value of their future consumption. The precautionary savings seen in Figure \ref{fig:prudence convex mu} disappears when the convexity of the marginal utility curve is eliminated.
+
+\section{Prudence vs.\ Risk Aversion \label{sec:prudence vs aversion}}
+
+Distinguishing savings attributable to prudence (or precaution) from savings attributable to risk aversion is conceptually subtle, and separately identifying these motives empirically is difficult. \textcite{Kimball1990} provides a concise statement of the distinction:
+
+\begin{pullquote}
+The term ``prudence'' is meant to suggest the propensity to prepare and forearm oneself in the face of uncertainty, in contrast to ``risk aversion,'' which is how much one dislikes uncertainty and would turn away from uncertainty if possible (54).
+\end{pullquote}
+
+Distinguishing prudence from risk aversion does not imply that they are not related; in fact, it is common that the economic primitives of preferences affect both the strength of risk aversion and prudence. The relationship is apparent from the mathematical definitions of the coefficients of relative and absolute prudence and risk aversion:
+\begin{align*}
+    AP(c) \coloneqq \frac{-u'''(c)}{u''(c)} && RP(c) \coloneqq \frac{-u'''(c)}{u''(c)} \times c \\
+    ARA(c) \coloneqq \frac{-u''(c)}{u'(c)} && RRA(c) \coloneqq \frac{-u''(c)}{u'(c)} \times c
+\end{align*}
+
+Risk aversion and prudence are both affected by the curvature of the utility function. To illustrate the relationship between prudence and risk aversion, the following subsections consider classes of preferences often used in economic modeling.
+
+\subsection{CRRA Preferences}
+The class of Constant Relative Risk Aversion (CRRA) preferences is characterized, as the name suggests, by a constant coefficient of relative risk aversion, denoted by $\sigma$:
+\begin{equation}
+u(c; \sigma) \coloneqq \frac{c^{1-\sigma}-1}{1-\sigma}.
+\end{equation}
+where $\sigma > 0$ and $\sigma \neq 1$. For the special case that $\sigma = 1$, the preferences are represented by the natural log:
+\[
+u(c) = \log(c)
+\]
+
+First, compute all the necessary derivatives:
+\begin{align*}
+u'(c; \sigma)  &= c^{-\sigma} \\
+u''(c; \sigma) &= -\sigma\,c^{-(\sigma+1)} \\
+u'''(c; \sigma) &= \sigma(\sigma+1)\,c^{-(\sigma+2)}
+\end{align*}
+
+After plugging the derivatives into the definitions above, and simplifying, we find
+\begin{align*}
+    AP(c; \sigma) \;=\; \frac{\sigma + 1}{c} && RP(c; \sigma) \;= \sigma + 1 \\
+    ARA(c; \sigma) \;=\; \frac{\sigma}{c} && RRA(c; \sigma) \;=\; \sigma
+\end{align*}
+
+When modeling preferences with the CRRA form, the calibrated (or estimated) coefficient of relative risk aversion immediately pins down prudence. Agents with high risk aversion have strong precautionary savings motives. This tight linkage is a special feature of CRRA preferences and need not hold more generally.
+
+\subsection{Quadratic Preferences \label{sec:quadratic utility}}
+The class of quadratic preferences is commonly used due to the fact that it gives rise to a linear marginal utility function, which is analytically convenient.
+\begin{equation}
+    u(c; a, b) \;=\; ac - \frac{b}{2} \times c^2
+\end{equation}
+with $b > 0$ and $a$ sufficiently large so that $c < \frac{a}{b}$ for all feasible levels of consumption.\footnote{A common parameterization of quadratic preferences is $u(c; a=0, b=1) = -\frac{1}{2}(c - \bar{c})^2$, where $\bar{c}$ is sufficiently large to ensure that utility is strictly increasing for all feasible $c$.} The first three derivatives of quadratic utility are
+\begin{align*}
+    u'(c; a,b) &\;=\; a - bc \\
+    u''(c; a,b) &\;=\; -b \\
+    u'''(c; a,b) &\;=\; 0
+\end{align*}
+
+Thus, the coefficients of prudence and risk aversion are
+\begin{align*}
+    AP(c;a,b) \;=\; 0 && RP(c;a,b) \;= 0 \\
+    ARA(c;a,b) \;=\; \frac{b}{a - bc} && RRA(c;a,b) \;=\; \frac{b}{a - bc} \times c
+\end{align*}
+
+An agent with quadratic preferences exhibits risk aversion; they have a positive willingness to pay to eliminate risk from endowments. However, this agent is not prudent and does not have a precautionary savings motive.
+
+\subsection{A Technical Note on Identification}
+A close reader may look at Figure \ref{fig:prudence} and wonder if the change in savings is attributable only to the precautionary motive. Does changing the curvature of marginal utility not also affect the curvature of utility? Indeed, in this example, it does; the change in parameters across panels \ref{fig:prudence convex mu} and \ref{fig:prudence linear mu} that is required to change the convexity of the marginal utility curve also changes the concavity of the utility function. Thus, relative risk aversion is not \emph{globally} identical across levels of consumption. However, in this stylized example, relative risk aversion is \emph{locally} identical in the neighborhood of $\bar{c}_{t+1}$ in the sense that both the level and slope of marginal utility coincide at the expected value of consumption.
+
+To make this point concrete, the diagram in Figure \ref{fig:prudence convex mu} is generated with the following calibration of CRRA preferences:
+\[
+u(c; \sigma = 1.1) = -\frac{c^{-0.1} - 1}{0.1}
+\]
+and the diagram in Figure \ref{fig:prudence linear mu} is generated with the following calibration of the quadratic preference:
+\[
+u(c; a = 0.98, b = 0.26) = 0.98 \times c - 0.13 \times c^2
+\]
+
+Further, the stochastic consumption process is calibrated by $c_{t+1}^L = 0.5$, $c_{t+1}^H = 3.5$, and $p = 0.5$, implying $\bar{c}_{t+1} = 2$. When the relative risk aversion is evaluated at 2, we have 
+\begin{align*}
+    RRA(\bar{c}_{t+1}; \sigma = 1.1) = 1.1 \\
+    RRA(\bar{c}_{t+1}; a = 0.98, b = 0.26) = \frac{0.26 \times 2}{0.98 - 0.26 \times 2} \approx 1.1
+\end{align*}
+Thus, within the neighborhood of 2, the savings attributable to the dislike of uncertainty is held fixed. Thus, the difference in optimal consumptions in Figures \ref{fig:prudence convex mu} and \ref{fig:prudence linear mu} can be attributed to changes in the precautionary motive.
+
+\section{Precautionary Savings \& Mean-Preserving Spreads}
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{@{}c @{}c c@{}}
+    & \textbf{High Variance} & \textbf{Low Variance}\\[4pt]
+
+    \parbox[c]{3em}{\centering\rotatebox{90}{\textbf{CRRA}}}
+    &
+    \begin{subfigure}[c]{0.42\textwidth}
+        \centering
+        \ifnotlatexml
+        \tagstructbegin{tag=Figure, alttext={Diagram showing precautionary savings under the assumption of CRRA preferences and a high variance consumption process.}}
+        \fi
+        \begin{tikzpicture}[scale=1.2]
+            % align two diagrams by putting x-axes on same vertical and centering x-axes over subcaptions
+            %\path[use as bounding box] (0,-1) rectangle (4.25,4.25);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,4.25) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            %\node [below] at (0.5,0) {$c_{t+1}^L$};
+            \node [left] at (0.7,-0.3) {$c_{t+1}^L$};
+            \node [below] at (2,0) {$\bar{c}_{t+1}$};
+            \node [below] at (3.5,0) {$c_{t+1}^H$};
+
+            % draw chord for expected MU
+            \draw[thick] (0.5,2.14354693) -- (3.5,0.25207232);
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,1.19780962) node[left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,1.19780962)--(2,0) node[below] {$\bar{c}_{t+1}$};
+
+            \draw[dashed](0,0.4665165) node[left]{$u'(\bar c_{t+1})$} -- (2,0.4665165);
+
+            % MU curve
+            % U(c; s) = (c^(1-s) - 1)/(1-s)
+            % u'(c; s) = c^(-s)
+            % Calibration: s = 1.1
+            \draw[cb5, very thick] plot[domain=0.28:4] (\x, \x^-1.1);
+
+            % Put dot on optimal bundle
+            \draw[dashed](0.84866905,1.19780962) -- (0.84866905,0) node[below]{$c_t^*$};
+            \filldraw[black] (0.84866905,1.19780962) circle (2pt);
+            \filldraw[black] (2,1.19780962) circle (2pt);
+            \filldraw[black] (2,0.4665165) circle (2pt);
+            \draw[dashed](0.5,2.14354693) -- (0.5,0);
+            \filldraw[black] (0.5,2.14354693) circle (2pt);
+            \draw[dashed](3.5,0.25207232) -- (3.5,0);
+            \filldraw[black] (3.5,0.25207232) circle (2pt);
+
+            % Brace showing precautionary saving
+            \draw[
+                decorate,
+                decoration={brace, mirror, amplitude=5pt},
+                yshift=-15pt
+            ] (0.84866905,0) -- (2,0) 
+            node[midway, below=4pt, align=center]{\scriptsize Precautionary Saving};
+        \end{tikzpicture}
+        \ifnotlatexml
+        \tagstructend
+        \fi
+    \end{subfigure}
+    &
+    \begin{subfigure}[c]{0.42\textwidth}
+        \centering
+        \ifnotlatexml
+        \tagstructbegin{tag=Figure, alttext={Diagram showing precautionary savings under the assumption of CRRA preferences and a low variance consumption process.}}
+        \fi
+        \begin{tikzpicture}[scale=1.2]
+            % align two diagrams by putting x-axes on same vertical and centering x-axes over subcaptions
+            %\path[use as bounding box] (0,-1) rectangle (4.25,4.25);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,4.25) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            %\node [below] at (0.5,0) {$c_{t+1}^L$};
+            \node [below] at (1,0) {$c_{t+1}^L$};
+            \node [below] at (2,0) {$\bar{c}_{t+1}$};
+            \node [below] at (3,0) {$c_{t+1}^H$};
+
+            % draw chord for expected MU
+            \draw[thick] (1,1) -- (3,0.29865282);
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,0.64932641) node[above left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,0.64932641)--(2,0) node[below] {$\bar{c}_{t+1}$};
+
+            \draw[dashed](0,0.4665165) node[below left]{$u'(\bar c_{t+1})$} -- (2,0.4665165);
+
+            % MU curve
+            % U(c; s) = (c^(1-s) - 1)/(1-s)
+            % u'(c; s) = c^(-s)
+            % Calibration: s = 1.1
+            \draw[cb5, very thick] plot[domain=0.28:4] (\x, \x^-1.1);
+
+            % Put dot on optimal bundle
+            \draw[dashed](1.48077175,0.64932641) -- (1.48077175,0) node[below]{$c_t^*$};
+            \filldraw[black] (1.48077175,0.64932641) circle (2pt);
+            \filldraw[black] (2,0.64932641) circle (2pt);
+            \filldraw[black] (2,0.4665165) circle (2pt);
+            \draw[dashed](1,1) -- (1,0);
+            \filldraw[black] (1,1) circle (2pt);
+            \draw[dashed](3,0.29865282) -- (3,0);
+            \filldraw[black] (3,0.29865282) circle (2pt);
+
+            % Brace showing precautionary saving
+            \draw[
+                decorate,
+                decoration={brace, mirror, amplitude=5pt},
+                yshift=-15pt
+            ] (1.48077175,0) -- (2,0) 
+            node[midway, below=4pt, align=center]{\scriptsize Precautionary Saving};
+        \end{tikzpicture}
+        \ifnotlatexml
+        \tagstructend
+        \fi
+    \end{subfigure}
+    \\[8pt]
+
+    \parbox[c]{3em}{\centering\rotatebox{90}{\textbf{Quadratic}}}
+    &
+    \begin{subfigure}[c]{0.42\textwidth}
+        \centering
+        \ifnotlatexml
+        \tagstructbegin{tag=Figure, alttext={Diagram showing precautionary savings under the assumption of quadratic preferences and a high variance consumption process.}}
+        \fi
+        \begin{tikzpicture}[xscale=1.2, yscale=4.8]
+            %\path[use as bounding box] (0,-0.25) rectangle (4.25,1.25);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,1.0625) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            \node [below] at (0.5,0) {$c_{t+1}^L$};
+            \node [below] at (3.5,0) {$c_{t+1}^H$};
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,0.4665164) node[left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,0.4665164)--(2,0) node[below] {$c_t^*=\bar{c}_{t+1}$};
+
+            % MU curve
+            % U(c; a, b) = ac - (b/2)*c^2
+            % u'(c; a, b) = a - b*c
+            % u'(c; a, b) = -b
+            % Quadratic MU line chosen to match CRRA u'(2) and u''(2) when sigma=1.1 and \bar c = 2
+            % u'(c) = a - b c, with a = 0.9796846, b = 0.2565841
+            \draw[cb5, very thick] plot[domain=0.2:3.7] (\x, {0.9796846 - 0.2565841*\x});
+
+            % Put dots and lines
+            \node[circle, fill=black, inner sep=2pt] at (2,0.4665164) {};
+            \draw[dashed](0.5,0.85139255) -- (0.5,0);
+            \node[circle, fill=black, inner sep=2pt] at (0.5,0.85139255) {};
+            \draw[dashed](3.5,0.08164025) -- (3.5,0);
+            \node[circle, fill=black, inner sep=2pt] at (3.5,0.08164025) {};
+        \end{tikzpicture}
+        \ifnotlatexml
+        \tagstructend
+        \fi
+    \end{subfigure}
+    &
+    \begin{subfigure}[c]{0.42\textwidth}
+        \centering
+        \ifnotlatexml
+        \tagstructbegin{tag=Figure, alttext={Diagram showing precautionary savings under the assumption of quadratic preferences and a low variance consumption process.}}
+        \fi
+        \begin{tikzpicture}[xscale=1.2, yscale=4.8]
+            %\path[use as bounding box] (0,-0.25) rectangle (4.25,1.25);
+
+            % draw and label axes
+            \draw[ultra thick,<->] (0,1.0625) node[left]{$u'(c)$}--(0,0)--(4.25,0) node[below]{$c$};
+
+            % label key points on c-axis
+            \node [below] at (1,0) {$c_{t+1}^L$};
+            \node [below] at (3,0) {$c_{t+1}^H$};
+
+            % label optimal consumption per Euler
+            \draw[dashed](0,0.4665164) node[left]{$\mathbb{E}_t[u'(c_{t+1})]$}--(2,0.4665164)--(2,0) node[below] {$c_t^*=\bar{c}_{t+1}$};
+
+            % MU curve
+            % U(c; a, b) = ac - (b/2)*c^2
+            % u'(c; a, b) = a - b*c
+            % u'(c; a, b) = -b
+            % Quadratic MU line chosen to match CRRA u'(2) and u''(2) when sigma=1.1 and \bar c = 2
+            % u'(c) = a - b c, with a = 0.9796846, b = 0.2565841
+            \draw[cb5, very thick] plot[domain=0.2:3.7] (\x, {0.9796846 - 0.2565841*\x});
+
+            % Put dots and lines
+            \node[circle, fill=black, inner sep=2pt] at (2,0.4665164) {};
+            \draw[dashed](1,0.7231005) -- (1,0);
+            \node[circle, fill=black, inner sep=2pt] at (1,0.7231005) {};
+            \draw[dashed](3,0.2099323) -- (3,0);
+            \node[circle, fill=black, inner sep=2pt] at (3,0.2099323) {};
+        \end{tikzpicture}
+        \ifnotlatexml
+        \tagstructend
+        \fi
+    \end{subfigure}
+    \\
+    \end{tabular}
+    \caption{Precautionary Savings under Mean-Preserving Spreads}\label{fig:prudence mps}
+\end{figure}
+
+As defined by \textcite{Kimball1990}, precautionary savings is affected by risk in future endowments, whereas risk aversion is determined by the agent's willingness to avoid contemporary uncertainty. That is, a risk averse agent strictly prefers consuming the expected value of a lottery with certainty to facing the lottery; equivalently, there exists a strictly lower level of consumption, called the \textbf{certainty equivalent}, that the agent can consume with certainty and be just as well off. A way to illustrate how precautionary savings operates distinctly from risk aversion is to consider how savings choices change under \textbf{mean-preserving spreads} in the endowment process.
+
+Figure \ref{fig:prudence mps} shows how optimal consumption differs across two stochastic consumption processes, which differ only in variance and not in the expected value of consumption. Each row assumes a different class of preferences, both of which exhibit risk aversion. Yet, we see that changes in savings behavior under mean-preserving spreads differs across CRRA and quadratic preference due to differences in prudence.
+
+The top row of Figure \ref{fig:prudence mps} shows how the magnitude of precautionary savings differs for the high- and low-variance consumption processes when the agent has preferences represented by a utility function with strictly convex marginal utility. Despite the fact that the expected value of the consumption lottery stays the same, the expected marginal utility of consumption is greatly reduced when the variance of the consumption process is decreased. In order for the Euler equation in \ref{eqn:euler} to hold, the optimal present consumption must increase, and the optimal savings must decrease.
+
+The bottom row of Figure \ref{fig:prudence mps} shows how consumption and savings differs for agents with quadratic preferences. The optimal consumption remains equal to the expected value of future consumption.  This property is known as \textbf{certainty equivalence}. Under quadratic preferences, changing the variance of the consumption process does not change the expected marginal utility of consumption, which is due to the fact that the agent's marginal utility is linear. Only changes in the expected value of stochastic endowments shift optimal consumption-savings decisions.
+
+%\section{Empirical Literature}
+%The model of agents with quadratic preferences makes a clear empirical prediction: changes in the variance of future income should not significantly affect current consumption. Further, the model of agents with CRRA preferences predicts that the strength of the precautionary motive, given the value of the coefficient of relative risk aversion.
+
+%\begin{itemize}
+%    \item Review experimental and observational studies that test for the existence of a precautionary savings motive, particularly those that reject certainty equivalence using exogenous changes in income risk.
+    
+%    \item Investigate whether the empirical literature supports the theoretical relationship \(RP \approx RRA + 1\). Which literatures rely on CRRA heavily? Are results affected meaningfully by pinning down prudence when calibrating or estimating coefficient of relative risk aversion?
+%\end{itemize}
+
+%\textbf{Next Step:} Pull papers suggested in this \href{https://chatgpt.com/share/69851243-6394-8009-8b5e-b0a30151d97c}{GPT thread}.
+
+% references page
+% if producing PDF, use biblatex
+\ifnotlatexml
+\printbibliography
+\else
+% if producing HTML5 or ePub using latexml, use natbib
+\bibliographystyle{plainnat}
+\bibliography{references/prudence.bib}
+\fi
+
+\end{document}

@@ -1,0 +1,134 @@
+\DocumentMetadata{
+    pdfstandard = ua-2,
+    lang=en-US,
+    tagging=on,
+    tagging-setup={math/setup=mathml-SE}
+}
+\documentclass[11pt]{article}
+
+\input{../../kotrous_article_preamble}
+
+% line numbers (for review drafts)
+\usepackage{lineno}
+%\linenumbers
+
+% biblatex bibliography (skip if using latexml to produce HTML5 or ePub version)
+\ifnotlatexml
+\addbibresource{references/olg.bib}
+\fi
+
+% fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% header
+\lhead{Kotrous}
+\chead{Capital Depreciation in OLG Model} 
+\rhead{April 22, 2026}
+% footer
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% article metadata
+\hypersetup{
+    pdftitle   = {A Note on Capital Depreciation in the Overlapping Generations Model},
+    pdfauthor  = {Michael Kotrous}
+}
+\title{A Note on Capital Depreciation in the Overlapping Generations Model}
+\author[1]{Michael Kotrous\thanks{Email: michael.kotrous@uga.edu}}
+\affil[1]{John Munro Godfrey, Sr. Department of Economics\\University of Georgia}
+\date{April 22, 2026}
+
+\begin{document}
+
+\maketitle
+
+In standard presentations of the overlapping generations model pioneered by \textcite{Samuelson1958} and \textcite{Diamond1965},\footnote{See Chapter 2 of \textcite{williamson1999macro}.} there is an implicit simplifying assumption that there is no depreciation of capital. The purpose of this simplifying assumption is to avoid complications related to the timing of depreciation, to be discussed below.
+
+The assumption of no depreciation can be inferred from the aggregate feasibility constraint (in the planner's setting), or the market clearing condition for the consumption good (in the competitive equilibrium setting): 
+\[ 
+F(K_t, L_t) + K_t = K_{t+1} + L_t c_t^y + L_{t-1} c_t^o 
+\]
+
+How do we modify the model if we wish to not impose the restriction that \(\delta = 0\)? In the social planner's problem, you simply need to incorporate capital depreciation into the \textbf{aggregate feasibility} constraint. For \(\delta \in (0,1]\), the planner's constraint becomes:
+\[
+    F(K_t, L_t) + (1 - \delta)K_t = K_{t+1} + L_t c_t^y + L_{t-1} c_t^o.
+\]
+
+In the competitive equilibrium setting, you need to:
+
+\begin{enumerate}
+    \item Adjust the consumption market clearing condition:
+    \[
+        F(K_t, L_t) + (1 - \delta)K_t = K_{t+1} + L_t c_t^y + L_{t-1} c_t^o.
+    \]
+    
+    \item Adjust the capital income available to an agent in old age through their budget constraint:
+    \[
+        c^o = s\bigl(1 + r - \delta\bigr),
+    \]
+    where \(r - \delta\) is the \textbf{net return}.
+\end{enumerate}
+
+To understand the second point, start with the firm problem, which is unchanged.
+\[
+    \max_{K_t, N_t} F(K_t, N_t) - r K_t - w N_t,
+\]
+with optimality conditions
+\[
+    r = F_K(K_t, N_t) = f'(k_t) \qquad w = F_N(K_t, N_t) = f(k_t) - k_t \times f'(k_t)
+\]
+where \(f\) is the intensive form of the CRS production function \(F\). When incorporating positive capital depreciation into the OLG model, we need to be clear that \(r\) is the \textbf{gross return} and \(r - \delta\) is the \textbf{net return} on savings.
+
+The implicit timing assumption in this setup is that depreciation occurs \emph{after} production takes place and \emph{before} the factor payment for capital is made to old-age households. Walk through the sequence of events in period \(t\):
+
+\begin{enumerate}
+    \item The economy begins with capital stock
+    \[
+        K_t = L_{t-1} s_{t-1}.
+    \]
+    
+    \item All capital is used in production, yielding \(F(K_t, L_t)\). Production destroys capital at rate \(\delta\).
+    
+    \item After production, firm makes payments to workers (the young) and capital owners (the old).\footnote{We assumed CRS technology, implying zero profits.} Total resources available to finance these payments are:
+    \[
+        F(K_t, L_t) + (1-\delta)K_t.
+    \]
+    
+    Labor income to the young is:
+    \[
+        L_t w = L_t \bigl(f(k) - k f'(k)\bigr).
+    \]
+    
+    Capital income to the old is:
+    \begin{align*}
+        L_{t-1} s_{t-1} - \delta L_{t-1} s_{t-1} + r L_{t-1} s_{t-1} &= L_{t-1} s_{t-1} (1 + r - \delta) \\
+        &= K_t (1 + f'(k) - \delta)
+    \end{align*}
+\end{enumerate}
+
+Adding labor and capital payments demonstrates that national income accounting identities hold:
+\begin{align*}
+    L_t (f(k) - k f'(k)) + K_t (1 + f'(k) - \delta)
+    &= F(K_t, L_t) - K_t f'(k) + K_t + K_t f'(k) - \delta K_t \\
+    &= F(K_t, L_t) + (1-\delta)K_t
+\end{align*}
+
+Finally, since aggregate capital payments imply each old agent receives \(s(1 + r - \delta)\), the old-age budget constraint is:
+\[
+    c^o = s(1 + r - \delta),
+\]
+which is the very modification to the household problem stated in point 2 above.
+
+For a more technical discussion of the OLG model, see \textcite{mukoyama2020olg}.
+
+% if producing PDF, use biblatex
+\ifnotlatexml
+\printbibliography
+\else
+% if producing HTML5 or ePub using latexml, use natbib
+\bibliographystyle{plainnat}
+\bibliography{references/olg}
+\fi
+
+\end{document}

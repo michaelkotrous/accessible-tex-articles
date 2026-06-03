@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/Users/michaelkotrous/Dropbox/ADA Tex/articles/consumption-notes,/Users/michaelkotrous/Dropbox/ADA Tex/articles/consumption-notes/references"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <bibliography citestyle="numbers" xml:id="bib">
+    <title/>
+    <biblist>
+      <bibentry key="addacooper" type="book" xml:id="bib.bib1">
+        <bib-title>Dynamic economics: quantitative methods &amp; applications</bib-title>
+        <bib-name role="author">
+          <surname>Adda</surname>
+          <givenname>Jerome</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Cooper</surname>
+          <givenname>Russell</givenname>
+        </bib-name>
+        <bib-date role="publication">2003</bib-date>
+        <bib-publisher>MIT Press</bib-publisher>
+        <bib-place>Cambridge, MA</bib-place>
+        <bib-data role="self" type="BibTeX">@book{addacooper,
+     title = {Dynamic Economics: Quantitative Methods \&amp; Applications},
+    author = {Adda, Jerome and Cooper, Russell},
+      year = {2003},
+ publisher = {MIT Press},
+   address = {Cambridge, MA}}
+</bib-data>
+      </bibentry>
+      <bibentry key="attanasio" type="incollection" xml:id="bib.bib2">
+        <bib-name role="author">
+          <surname>Attanasio</surname>
+          <givenname>Orazio P.</givenname>
+        </bib-name>
+        <bib-title>Consumption</bib-title>
+        <bib-related role="host" type="book">
+          <bib-title>Handbook of Macroeconomics</bib-title>
+          <bib-part role="volume">1B</bib-part>
+          <bib-name role="editor">
+            <surname>Taylor</surname>
+            <givenname>John B.</givenname>
+          </bib-name>
+          <bib-name role="editor">
+            <surname>Woodford</surname>
+            <givenname>Michael</givenname>
+          </bib-name>
+          <bib-publisher>Elsevier</bib-publisher>
+        </bib-related>
+        <bib-date role="publication">1999</bib-date>
+        <bib-data role="self" type="BibTeX">@incollection{attanasio,
+    author = {Attanasio, Orazio P.},
+     title = {Consumption},
+ booktitle = {Handbook of Macroeconomics},
+    volume = {1B},
+    editor = {Taylor, John B. and Woodford, Michael},
+      year = {1999},
+ publisher = {Elsevier}}
+</bib-data>
+      </bibentry>
+      <bibentry key="seater" type="incollection" xml:id="bib.bib3">
+        <bib-title>Friedman’s theory of income and consumption</bib-title>
+        <bib-name role="author">
+          <surname>Seater</surname>
+          <givenname>John J.</givenname>
+        </bib-name>
+        <bib-related role="host" type="book">
+          <bib-title>Milton Friedman: Contributions to Economics and Public Policy</bib-title>
+          <bib-name role="editor">
+            <surname>Cord</surname>
+            <givenname>Robert A.</givenname>
+          </bib-name>
+          <bib-name role="editor">
+            <surname>Hammond</surname>
+            <givenname>J. Daniel</givenname>
+          </bib-name>
+          <bib-publisher>Oxford University Press</bib-publisher>
+        </bib-related>
+        <bib-date role="publication">2016</bib-date>
+        <bib-data role="self" type="BibTeX">@incollection{seater,
+     title = {Friedman's Theory of Income and Consumption},
+    author = {Seater, John J.},
+ booktitle = {Milton Friedman: Contributions to Economics and Public Policy},
+    editor = {Cord, Robert A. and Hammond, J. Daniel},
+      year = {2016},
+ publisher = {Oxford University Press}}
+</bib-data>
+      </bibentry>
+    </biblist>
+  </bibliography>
+</document>

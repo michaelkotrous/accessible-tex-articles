@@ -1,0 +1,411 @@
+\DocumentMetadata{
+    pdfstandard = ua-2,
+    lang=en-US,
+    tagging=on,
+    tagging-setup={math/setup=mathml-SE}
+}
+\documentclass[11pt]{article}
+
+\input{../../kotrous_article_preamble}
+
+% custom math operators
+\newcommand{\expectation}{\mathbb{E}}
+\newcommand{\warning}{\textcolor{red}}
+
+% line numbers (for review drafts)
+\usepackage{lineno}
+%\linenumbers
+
+% biblatex bibliography (skip if using latexml to produce HTML5 or ePub version)
+\ifnotlatexml
+\addbibresource{references/consumptionnotes.bib}
+\fi
+
+% fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% header
+\lhead{Kotrous}
+\chead{Consumption \& Savings}
+\rhead{December 2, 2024}
+% footer
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% article metadata
+\hypersetup{
+    pdftitle   = {Notes on the Theory of Consumption \& Savings},
+    pdfauthor  = {Michael Kotrous}
+}
+\title{Notes on the Theory of Consumption \& Savings}
+\author[1]{Michael Kotrous\thanks{Email: michael.kotrous@uga.edu}}
+\affil[1]{John Munro Godfrey, Sr. Department of Economics\\University of Georgia}
+\date{December 2, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Consumption is about two-thirds of GDP in the U.S. and other rich countries. Consumption decisions are determined simultaneously with savings and investment decisions, as well as household formation, fertility, and so on. That which is not consumed can be saved, invested, or bequested to heirs, and financial instruments and institutions have emerged to address the desire of households to smooth their consumption over their lifetimes. These instruments and institutions allow households to save during their working years and consume in retirement.
+
+The workhorse models of consumption over one's lifetime is the life-cycle (finite time horizon) and permanent income (infinitely-lived households) models. They differ in time horizons, and the life-cycle model explicitly considers consumption behavior in light of the fact that many people choose to retire late in life. Aside from these differences, both models ground consumption behavior in microeconomic theory. These models advanced the theory of consumption by making it more than just a static decision based on current income, as Keynes argued. Both models view consumption as an intertemporal choice that balances one's current situation with her expectations about the future.
+
+\section{Stylized facts about consumption}
+From \textcite{attanasio}:
+\begin{itemize}
+    \item In aggregate and household data, non-durable consumption is less volatile than disposable income. That is, non-durable consumption is smooth over the business cycle and labor supply.
+    \item Meanwhile, durable consumption is more volatile than disposable income. Durable consumption is pro-cyclical and is volatile against labor supply.
+    \item In micro household data, a hump shape is found total consumption. However, if one looks only at non-durable consumption and controls for ``adult equivalents'' in the household, consumption behavior among households appears more consistent with the flat line predicted by the permanent income model. Yet still, consumption appears to decline around retirement age in US and UK data. Possible explanations include:
+    \begin{itemize}
+        \item Non-separability of consumption and leisure (i.e., much leisure requires consumption of some form). Heckman (1974)
+        \item Failure of the permanent income model. One study--Carroll and Summers (1991)--found that when separating households by educational attainment of head of household, variability in consumption closely tracks with variability in income across education groups (higher educated; higher income; more pronounced increase in consumption when income increased after earning degree; high school dropouts have flatter consumption over their lifetimes).
+    \end{itemize}
+\end{itemize}
+
+A brief note on household-level micro data. Various papers on U.S. consumption have used Consumption Expenditure Surveys (CEX) data. To avoid issues with non-random attrition, authors have formed a ``pseudo-panel'' in which they average log consumption over cohorts defined by 5-year age groups of head of household (e.g., 20-24 in 1980, 21-25 in 1981, 22-26 in 1982, \dots). If there are $Q$ age groups and $T$ cross-sections of observations, then the pseudo-panel has dimension $Q \times T$.
+
+\section{The life cycle and permanent income models}
+The life cycle and permanent income model differ in their time horizon. The life cycle model assumes finite lifespan, while the permanent income model analyzes infinitely-lived households. The life cycle model models rational consumption behavior in light of large loss in disposable income upon retirement, while the permanent income model focuses on consumption-smoothing in light of variation in disposable income due to employment/disemployment over an infinite time horizon.
+
+We will see that similar predictions are made by these models. In both models, optimal consumption over time is described by the Euler equation derived from utility maximization. Hence, the life cycle model (Modigliani and Brumlerg) and permanent income model (Friedman) are grounded in micro theory and treat consumption as an intertemporal decision. This contrasts with the Keynesian consumption function, which simply defines consumption as a function of current disposable income, usually a fixed fraction of disposable income.
+
+\subsection{Deterministic Income: Deriving Euler Equation}
+\subsubsection{Intertemporal Budget Constraint} \label{section:deterministicEuler-IBC}
+Consider the simplest case: a household knows the income $y_t$ that it will earn in every period, and it must choose a sequence of consumption $c_t$ and total savings $a_{t+1}$ that maximizes its preferences. Assume household earns market-prevailing interest rate $r$. For an infinitely-lived household, we have: $$\max_{\{c_t, a_{t+1}\}_{t=0}^\infty} \sum_{t=0}^\infty \beta^t u(c_t)$$ subject to $c_t + a_{t+1} = y_t + (1+r)a_t$, where $a_0$ is given. 
+
+This is the household's intertemporal budget constraint. Attach $\lambda_t$ as Lagrange multiplier on period $t$'s budget constraint. We can derive the household's Euler equation by taking first-order coditions with respect to consumption and savings choice each period.
+
+\begin{align*}
+    \text{wrt $c_t$:} && \lambda_t &= \beta^t u'(c_t) \Rightarrow \lambda_{t+1} = \beta^{t+1} u'(c_{t+1}) \\ 
+    \text{wrt $a_{t+1}$:} && \lambda_t &= \lambda_{t+1}(1+r)
+\end{align*}
+
+Hence household's Euler equation is given by $$\underbrace{u'(c_t)}_{\text{Marginal Cost of Savings}} = \underbrace{\beta(1+r) u'(c_{t+1})}_{\text{Marginal Benefit of Savings}}$$
+
+To derive some interesting results, let's impose INADA conditions on household's utility function. Let's suppose utility is strictly increasing and strictly concave, so $u'(\cdot) > 0$ everywhere and $u''(\cdot) < 0$. Further suppose that $u'(0) \to \infty$, and $u'(n) \to 0$ as $n \to \infty$.
+
+Consumption decision then depends on the relationship between the household's subjective discount factor $\beta$ and the market discount factor $\frac{1}{1+r}$. We can break this into three cases:
+\begin{align*}
+    \text{Case \#1:} && \beta < \frac{1}{1+r} \Rightarrow u'(c_t) < u'(c_{t+1}) \Rightarrow c_t > c_{t+1} \\
+    \text{Case \#2:} && \beta > \frac{1}{1+r} \Rightarrow u'(c_t) > u'(c_{t+1}) \Rightarrow c_t < c_{t+1} \\
+    \text{Case \#3:} && \beta = \frac{1}{1+r} \Rightarrow u'(c_t) = u'(c_{t+1}) \Rightarrow c_t = c_{t+1}
+\end{align*}
+
+These results follow from assumption that $u(\cdot)$ is strictly concave, so $u'(\cdot)$ is a strictly decreasing function. We call these three cases the \textbf{``consumption-tilting'' savings motive}. If household is less patient than the market (case 1), then household consumes more in the present because the marginal cost of savings exceeds its marginal benefit when consumption is smoothed. The opposite is true of a household that is more patient than the market. Finally, if the subjective discount factor and market discount factor are equal, the household smoothes its consumption. This special case in which $\beta(1+r) = 1$ will be of particular interest when we introduce stochastic income process later.
+
+This result also holds for the finite case. Suppose household lives $T$ periods. We write household's optimization problem as $$\max_{\{c_t, a_{t+1}\}_{t=0}^T} \sum_{t=0}^T \beta^t u(c_t)$$ subject to $c_t + a_{t+1} = y_t + (1+r)a_t$, where $a_0$ is given and $a_{T+1} \geq 0$. The nonnegativity constraint on savings in the final period is critical. Otherwise, household would maximize utility by dying with infinite debt.
+
+As before, attach Lagrange multiplier $\lambda_t$ to period $t$'s budget constraint. Also attach multiplier $\mu$ to nonnegativity constraint on $a_{T+1}$. Then first-order conditions are:
+\begin{align*}
+    \text{wrt $c_t$:} && \lambda_t &= \beta^t u'(c_t) \Rightarrow \lambda_{t+1} = \beta^{t+1} u'(c_{t+1}) \\ 
+    \text{wrt $a_{t+1}$:} && \lambda_t &= \lambda_{t+1}(1+r) \text{ for $t=0,1,\dots,T-1$} \\
+    \text{wrt $a_{T+1}$:} && \lambda_T &= \mu
+\end{align*}
+
+The finitely-lived household faces same necessary condition for its consumption as infinitely-lived household: $u'(c_t) = \beta(1+r)u'(c_{t+1})$. Observe that $\mu = \lambda_T = \beta^T u'(c_T)$. As long as the marginal benefit of consumption is strictly positive in the final period of life, $\mu > 0$, and by Kuhn-Tucker condition, $a_{T+1} = 0$. In words, as long as the household gets some positive marginal benefit from additional consumption in the last period of life, it will exhaust all of its wealth in its final period.\footnote{For discussion of a simple two-period consumption-savings model and extensions, see Chapter 6 of \textcite{addacooper}.}
+
+\subsubsection{Lifetime Budget Constraint \& the Consumption Function}
+We can also derive the same Euler equations by finding the household's lifetime budget constraint, which simplifies our problem by removing the savings choice.
+\begin{align*}
+    t=0 && c_0 + a_1 &= y_0 + a_0 \\
+    t=1 && c_1 + a_2 &= y_1 + (1+r)a_1 \Rightarrow a_1 = \frac{c_1 + a_2 - y_1}{1+r} \\
+    t=2 && c_2 + a_3 &= y_2 + (1+r)a_2 \Rightarrow a_2 = \frac{c_2 + a_3 - y_2}{1+r}
+\end{align*}
+
+It is conventional to say that initial wealth endowment $a_0$ does not earn market return in period $0$, but thereafter savings $a_t$ earns market return at rate $r$. Replacing for $a_1$ and $a_2$ in period 0's budget constraint gives 
+\begin{align*}
+    c_0 + \frac{c_1 + \left(\frac{c_2 + a_3 - y_2}{1+r}\right) - y_1}{1+r} &= a_0 + y_0 \\ 
+    c_0 + \frac{c_1}{1+r} + \frac{c_2}{(1+r)^2} + \frac{a_3}{(1+r)^2} &= a_0 + y_0 + \frac{y_1}{1+r} + \frac{y_2}{(1+r)^2} \\
+\end{align*}
+
+Observing the pattern, we see that in any period $T$, household's lifetime budget constraint is $$\sum_{t=0}^T \frac{c_t}{(1+r)^t} + \frac{a_{T+1}}{(1+r)^T} = a_0 + \sum_{t=0}^T \frac{y_t}{(1+r)^t}$$
+
+For the household that lives for only $T$ periods, we saw in Section \ref{section:deterministicEuler-IBC} that $a_{T+1} = 0$, so the finite-horizon lifetime budget constraint simplifies to $$\sum_{t=0}^T \frac{c_t}{(1+r)^t} = a_0 + \sum_{t=0}^T \frac{y_t}{(1+r)^t}$$
+
+Meanwhile, for the infinitely-lived household, observe that for $T \to \infty$, $\frac{a_{T+1}}{(1+r)^T} \to 0$, so its lifetime budget constraint similarly simplifies to $$\sum_{t=0}^\infty \frac{c_t}{(1+r)^t} = a_0 + \sum_{t=0}^\infty \frac{y_t}{(1+r)^t}$$
+
+In both cases, we see that the present value of consumption equals the sum of initial financial wealth $a_0$ and the present value of its income flows.
+
+The objective function remains the same, so attaching $\lambda$ as Lagrange multiplier on lifetime budget constraint gives us FOC with respect to $c_t$: $$\beta^t u'(c_t) = \frac{\lambda}{(1+r)^t}$$
+
+Rolling one period ahead, we see that $\beta^{t+1} u'(c_{t+1}) = \frac{\lambda}{(1+r)^{t+1}}$. Hence 
+\begin{align*}
+    \lambda = [\beta(1+r)]^t u'(c_t) &= [\beta (1+r)]^{t+1} u'(c_{t+1}) \\
+    \Rightarrow u'(c_t) &= \beta(1+r)u'(c_{t+1})
+\end{align*}
+
+We've arrived to the same Euler equation. Again, assume $\beta(1+r) = 1$ and $r > 0$. Also assume that $u(\cdot)$ is strictly increasing, strictly concave, and satisfies INADA limit conditions. Then $c_t = c_{t+1}$ for all $t$.
+
+We can use lifetime budget constraint to solve for consumption. Let's start with household that lives $T$ periods, then we can evaluate limit as $T \to \infty$ to find expression for consumption in infinite horizon.
+\begin{align}
+    && c_t \sum_{t=0}^T \frac{1}{(1+r)^t} &= a_0 + \sum_{t=0}^T \frac{y_t}{(1+r)^t} \nonumber \\
+    && c_t \left(\frac{1 - \left(\frac{1}{1+r}\right)^{T+1}}{1-\frac{1}{1+r}}\right) &= a_0 + \sum_{t=0}^T \frac{y_t}{(1+r)^t} \nonumber \\
+    \text{Finite horizon:} && c_t &= \underbrace{\left(\frac{\frac{r}{1+r}}{1 - \left(\frac{1}{1+r}\right)^{T+1}}\right) \left(a_0 + \sum_{t=0}^T \frac{y_t}{(1+r)^t}\right)}_{\text{Permanent Income}} \label{eqn:ctdeterministicfinite} \\
+    \text{Infinite horizon $T \to \infty$:} && c_t &= \underbrace{\left(\frac{r}{1+r}\right)\left(a_0 + \sum_{t=0}^\infty \frac{y_t}{(1+r)^t}\right)}_{\text{Permanent Income}} \label{eqn:ctdeterministic}
+\end{align}
+
+We need for $r > 0$ so that geometric series converges. Observe that by assumption that $\beta = \frac{1}{1+r}$, $\frac{r}{1+r} = 1-\beta$. In both the life-cycle model and permanent income model, we see that household consumes its ``permanent income'' each period. By permanent income, we mean the annuitized value of the household's lifetime wealth \textcite{seater}. This is a fixed fraction of the present value of its total lifetime wealth.
+
+\subsubsection{Retirement Savings}
+The results on finite-horizon presented so far are all consistent for a life-cycle model in which household retires before death (just define deterministic income path such that $y_t = 0$ during retirement). But let's explictly consider a household that live $T$ periods and works from period 1 to $N$.
+
+Let's impose more restrictive simplifying assumptions than before. Assume $\beta = 1$, $r=0$ (so $\beta(1+r) = 1$), and $u'(\cdot)$ is strictly increasing and concave. Then by Euler equation, $\bar{c} = c_t = c_{t+1}$ for all $t=1,2,\dots,T$. Further assume initial financial wealth $a_1 = 0$ amd person receives deterministic, constant income $y$ while working. Then lifetime budget constraint is 
+\begin{align*}
+    \sum_{t=1}^T \bar{c} &= \sum_{t=1}^N y \\
+    \Rightarrow \bar{c} &= \underbrace{\frac{Ny}{T}}_{\text{Permanent Income}} 
+\end{align*} 
+
+To consume permanent income from start of retirement to death, a person must accumulate financial wealth during their working years. Each period, financial wealth increases by $y - \bar{c}$. That is, for $t=1,\dots,N$,
+\begin{align*}
+    a_{t+1} - a_t &= y - \bar{c} \\
+    \Rightarrow a_2 - a_1 = a_2 &= y - \bar{c} \\
+                a_3 - a_2 &= y - \bar{c} \\
+    \Rightarrow a_3 &= 2(y-\bar{c}) \\
+    \Rightarrow a_{t+1} &= t(y-\bar{c}) \\
+    &= t\left(y - \frac{Ny}{T}\right) \\
+    &= yt\left(\frac{T-N}{T}\right)
+\end{align*}
+
+A worker transitions into retirement having accumulated financial wealth $a_{N+1} = yN\left(\frac{T-N}{T}\right)$. Retiree continues to consume their permanent income each period, so for $t=N+1,\dots,T$,
+\begin{align*}
+    a_{t+1} &= yN\left(\frac{T-N}{T}\right) - \frac{yN}{T}(t-N) \\
+    &= \frac{yNT}{T} - \frac{yN^2}{T} - \frac{yNt}{T} + \frac{yN^2}{T} \\
+    &= \frac{yN}{T}(T-t)
+\end{align*}
+
+Altogether, financial wealth as of period $t$ is $$a_{t+1} = \begin{cases}
+    yt\left(\frac{T-N}{N}\right) & \text{for $t=1,\dots,N$} \\
+    \frac{yN}{T}(T-t) & \text{for $t=N+1,\dots,T$}
+\end{cases}$$
+
+We see that financial wealth is increasing in $t$ during working years, and decreasing in $t$ in retirement years. Households that seek to smooth consumption save during working years and spend down their savings during retirement. Also note that in period $T$, $a_{T+1} = \frac{yN}{T}(T-T) = 0$. Hence, as discussed above, household exhausts all remaining financial wealth in the final period of life.
+
+\subsubsection{Summary}
+We derived the following results from the case in which household faces deterministic income.
+\begin{itemize}
+    \item If we impose INADA conditions household's utility (i.e., utility is strictly increasing and strictly concave), the household's consumption path is monotone and depends on the relationship between its subjective discount factor $\beta$ and the market discount factor $\frac{1}{1+r}$. 
+    \begin{itemize}
+        \item If household is more or less patient than the market, it has monotone increasing or decreasing consumption over time.
+        \item If $\beta(1+r) = 1$, then household smooths consumption and consumes an equal share of its ``permanent income'' each period. This holds for any deterministic income path, including one with retirement period at the end of life.
+    \end{itemize}
+    \item In the absence of retrictions on borrowing, the timing of income affects savings but does not affect consumption if lifetime wealth is held constant. That is, \emph{consumption increases only if an increase in disposable income is permanent.}
+    \item In absence of any preference for bequests, finitely-lived households exhaust all financial wealth before they die. This follows from restriction that we do not allow households to die in debt.
+\end{itemize}
+
+\subsection{Stochastic Income \& Quadratic Preferences}
+\subsubsection{Certainty Equivalence}
+In this section, we introduce uncertainty to the income process and maintain a standard expected utility framework. Let's derive the Euler equation in its general form, then we'll impose some regularity conditions to compare the stochastic and deterministic cases. At period $t$, household maximizes present value of future utility $$\max_{\{c_j, a_{j+1}\}_{j=0}^\infty} \expectation_t \left\{ \sum_{j=0}^\infty \beta^j u(c_j) \right\}$$ subject to $c_j + a_{j+1} = (1+r)a_j + y_j$ for all $j \geq t$. 
+
+Let $\lambda_j$ and $\lambda_{j+1}$ be budget constraint on period $j$ and $j+1$ budget constraint. The first-order conditions are
+\begin{align*}
+    \text{wrt $c_j$:} && \lambda_j &= \beta^j u'(c_j) \Rightarrow \lambda_{j+1} = \beta^{j+1} \expectation_j[u'(c_{j+1})] \\ 
+    \text{wrt $a_{j+1}$:} && \lambda_j &= \lambda_{j+1} (1+r)
+\end{align*}
+
+This gives Euler equation $$u'(c_j) = \beta (1+r) \expectation_j[u'(c_{j+1})]$$
+
+Let's impose two conditions to let us solve for consumption:
+\begin{itemize}
+    \item $\beta(1+r) = 1$ (i.e., subjective discount factor equals market discount factor)
+    \item $u(c) = \alpha c - \cfrac{\gamma c^2}{2}$ (i.e., quadratic utility). This implies $u'(c) = \alpha - \gamma c$.
+\end{itemize}
+
+The Euler equation simplifies to 
+\begin{align*}
+    u'(c_j) &= \expectation_j[u'(c_{j+1})] \\
+    \alpha - \gamma c_j &= \expectation_j[\alpha - \gamma c_{j+1}] \\
+    \alpha - \gamma c_j &= \alpha - \gamma \expectation_j[c_{j+1}] \\
+    c_j &= \expectation_j[c_{j+1}]
+\end{align*}
+
+With this simplification, we can use Euler equation and budget constraint to solve for period $j$'s consumption.
+\begin{align*}
+    \text{Period $j$:} && c_j + a_{j+1} &= (1+r)a_j + y_j \\
+    \text{Period $j+1$:} && c_{j+1} + a_{j+2} &= (1+r)a_{j+1} + y_{j+1} \\
+    && \Rightarrow a_{j+1} &= \frac{c_{j+1} + a_{j+2} - y_{j+1}}{1+r} \\
+    \text{Period $j+2$:} && c_{j+2} + a_{j+3} &= (1+r)a_{j+2} + y_{j+2} \\
+    && \Rightarrow a_{j+2} &= \frac{c_{j+2} + a_{j+3} - y_{j+2}}{1+r}
+\end{align*}
+
+Then period $j$'s budget constraint can be rewritten as 
+\begin{align*}
+    c_j + \frac{c_{j+1} + \left(\frac{c_{j+2} + a_{j+3} - y_{j+2}}{1+r}\right) - y_{j+1}}{1+r} &= (1+r)a_j + y_j \\ 
+    c_j + \frac{c_{j+1}}{1+r} + \frac{c_{j+2}}{(1+r)^2} + \frac{a_{j+3}}{(1+r)^2} &= (1+r)a_j + y_j + \frac{y_{j+1}}{1+r} + \frac{y_{j+2}}{(1+r)^2}
+\end{align*}
+
+Suppose household lives $T$ periods. Seeing the pattern, we write remaining lifetime budget constraint as of period $t$ as $$\sum_{j=0}^T \frac{c_{t+j}}{(1+r)^j} + \frac{a_{T+1}}{(1+r)^T} = (1+r)a_t + \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j}$$
+
+In finite horizon problem, because household has no preference for bequests, $a_{T+1} = 0$. In infinite horizon, we assume $\lim_{T \to \infty} \frac{a_{T+1}}{(1+r)^T} = 0$.
+
+Recall that we have only information about stochastic income process up to period $t$, so we write remaining lifetime budget constraint as of period $t$ as $$\expectation_t \sum_{j=0}^T \frac{c_{t+j}}{(1+r)^j} = (1+r)a_t + \expectation_t \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j}$$
+
+In infinite horizon case, remaining lifetime budget constraint as of period $t$ is 
+\begin{align*}
+    \expectation_t \sum_{j=0}^\infty \frac{c_{t+j}}{(1+r)^j} = (1+r)a_t + \expectation_t \sum_{j=0}^\infty \frac{y_{t+j}}{(1+r)^j}
+\end{align*}
+
+Now we use law of iterated expectation and Euler equation to find expression for $\expectation_t[c_{t+j}]$. A key fact is that the current expectation of future expectation of future consumption is equal to current expectation.
+\begin{align*}
+    \expectation_t[c_{t+j}] &= \expectation_t[\expectation_{t+j-1}[c_{t+j}]] && \text{by LIE} \\
+    &= \expectation_t[c_{t+j-1}] && \text{by Euler equation} \\ 
+    &= \expectation_t[\expectation_{t+j-2}[c_{t+j-1}]] && \text{by LIE} \\
+    &= \expectation_t[c_{t+j-2}] && \text{by Euler equation} \\
+    &= \dots \\ 
+    &= \expectation_t[\expectation_t[c_{t+1}]] && \text{by LIE} \\ 
+    &= \expectation_t[c_t] && \text{by Euler equation}\\ 
+    &= c_t && \text{$c_t$ is known in period $t$}
+\end{align*}
+
+Observe that we haven't defined the specific stochastic process for $y_t$. This is a general result that follows from the law of iterated expectation and the Euler equation that we derived by assuming quadratic utility and $\beta(1+r) = 1$.
+
+Now we solve for consumption in period $t$:
+\begin{align*}
+    \expectation_t \sum_{j=0}^T \frac{c_{t+j}}{(1+r)^j} &= (1+r)a_t + \expectation_t \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j} \\
+    c_t \cdot \sum_{j=0}^T \left(\frac{1}{1+r}\right)^j &= (1+r)a_t + \expectation_t \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j} \\ 
+    c_t \left(\frac{1 - \left(\frac{1}{1+r}\right)^{T+1}}{1-\frac{1}{1+r}}\right) &= (1+r)a_t + \expectation_t \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j}
+\end{align*}
+
+So we have expressions for consumption in finite and infinite horizon cases.
+\begin{align}
+    \text{Finite horizon:} && c_t &= \underbrace{\left(\frac{\frac{r}{1+r}}{1 - \left(\frac{1}{1+r}\right)^{T+1}}\right)\underbrace{\left((1+r)a_t + \expectation_t \sum_{j=0}^T \frac{y_{t+j}}{(1+r)^j}\right)}_{\text{Expected Remaining Lifetime Wealth}}}_{\text{Expected Permanent Income}} \label{eqn:ctstochasticfinite} \\
+    \text{Infinite horizon $T \to \infty$:} && c_t &= \underbrace{\left(\frac{r}{1+r}\right)\underbrace{\left((1+r)a_t + \expectation_t \sum_{j=0}^\infty \frac{y_{t+j}}{(1+r)^j}\right)}_{\text{Expected Remaining Lifetime Wealth}}}_{\text{Expected Permanent Income}} \label{eqn:ctstochastic}
+\end{align}
+
+Under the conditions that $\beta(1+r)=1$ and utility is of quadratic form, household consumes a fixed proportion of its \emph{expected remaining lifetime wealth}. We call this fixed proportion the household's \emph{expected permanent income}.
+
+Notice that the consumption behavior is equivalent to consumption behavior in the deterministic case in (\ref{eqn:ctdeterministicfinite}) and (\ref{eqn:ctdeterministic}). The only difference is that household makes decision based on \emph{expectation} of future income instead of a pre-determined income path. For this reason, we describe this result as the \textbf{certainty equivalence}. 
+
+Notice also that consumption under quadratic utility depends only on the first moment of income. Later, we consider ``precautionary savings'' in which consumption behavior depends on higher moments of income. Precautionary savings depends on ``prudence,'' which is a property of the curvature of marginal utility, or $u'''(\cdot)$. In the case of quadratic utility, $u'''(\cdot) = 0$, meaning marginal utility is affine. In this case, the agent is said to have no prudence.
+
+\subsubsection{Solving the Consumption and Savings Functions}
+With the general formula for consumption under certainty equivalence above, we can explicitly solve for the consumption function for a given income process, whether it be AR(1), $iid$, or something else. 
+
+In the demonstrations below, suppose income follows an \textbf{AR(1) process}, so $y_{t+1} = \rho y_t + \epsilon_{t+1}$. We say $\rho$ is persistence parameter and $\epsilon_t$ is the ``income shock'' in period $t$, where $\expectation[\epsilon_t] = 0$ for all $t$. I highlight two methods for solving for the consumption and savings functions, which give equivalent results.
+
+\noindent
+\textbf{Method \#1: Brute Force}
+
+As the name implies, we can solve for the consumption function by plugging in for $\expectation_t[y_{t+j}]$ in our expression for CEQ. Replacing for our AR(1) process, we have:
+\begin{align*}
+    c_t &= r a_t + \left(\frac{r}{1+r}\right)\left(y_t + \frac{\expectation_t[y_{t+1}]}{1+r} + \frac{\expectation_t[\expectation_{t+1}[y_{t+1}]]}{(1+r)^2} + \dots \right) \\
+    &= r a_t + \left(\frac{r}{1+r}\right)\left(y_t + \frac{\rho y_t}{1+r} + \frac{\expectation_t[\rho y_{t+1}]}{(1+r)^2} + \dots \right) \\
+    &= r a_t + \left(\frac{r}{1+r}\right)\left(y_t + \frac{\rho y_t}{1+r} + \frac{\rho^2 y_t}{(1+r)^2} + \dots \right) \\
+    &= r a_t + \left(\frac{r}{1+r}\right)\left(\sum_{j=0}^\infty \left(\frac{\rho}{1+r}\right)^j\right)y_t
+\end{align*}
+We're ensured that $\frac{\rho}{1+r} < 1$ as long as $r > 0$ because $\rho \in [0,1]$. Evaluating the sum and simplifying, we find that $$c_t = ra_t + \left(\frac{r}{1+r-\rho}\right) y_t$$
+
+Using the intertemporal budget constraint, we can derive the savings function:
+\begin{align*}
+    a_{t+1} &= (1+r)a_t + y_t - c_t \\
+    &= (1+r)a_t + y_t - ra_t - \left(\frac{r}{1+r-\rho}\right)y_t \\
+    &= a_t + \left(1 - \frac{r}{1+r-\rho}\right)y_t \\
+    &= a_t + \left(\frac{1-\rho}{1+r-\rho}\right) y_t
+\end{align*}
+
+\noindent
+\textbf{Method \#2: Guess-and-Verify}
+
+This method is useful in that the same form guess can be used to solve for many forms of income processes ($iid$, AR(1), \dots), as long as the conditions for certainty equivalence hold. Our initial guess has the form $c_t = Aa_t + By_t + D$, where $D$ is a some constant that doesn't depend on assets or income. We need for $A$, $B$, and $D$ to be time-invariant so $c_{t+1} = Aa_{t+1} + By_{t+1} + D$.
+
+Using the Euler equation, we can solve for $a_{t+1}$:
+\begin{align*}
+    \expectation_t[c_{t+1}] &= c_t \\
+    \expectation_t[Aa_{t+1} + By_{t+1} + D] &= Aa_t + By_t + D \\
+    Aa_{t+1} + B\expectation_t[y_{t+1}] + D &= Aa_t + By_t + D \\
+    a_{t+1} &= a_t + \frac{B}{A}\left(y_t - \expectation_t[y_{t+1}] \right)
+\end{align*}
+Continuining our example of AR(1) income process: $y_{t+1} = \rho y_t + \epsilon_{t+1}$, $\expectation[\epsilon_{t+1}]=0$. Then $$a_{t+1} = a_t + \frac{B}{A}(1-\rho)y_t$$
+
+Replacing for $a_{t+1}$ in the intertemporal budget constraint, we have 
+\begin{align*}
+    c_t &= (1+r)a_t + y_t - a_t - \frac{B}{A}(1-\rho)y_t \\
+        &= r a_t + \left(1 - \frac{B(1-\rho)}{A}\right)y_t
+\end{align*}
+Thus $A = r$, and $B = \frac{r - B(1-\rho)}{r} \Rightarrow B(1 + r -\rho) = r \Rightarrow B = \frac{r}{1 + r - \rho}$. Finally, $D = 0$. Our coefficients are time-invariant and independent of assets, income, and consumption, so we've solved the consumption function and savings function: 
+\begin{align*}
+    c_t &= r a_t + \left(\frac{r}{1+r-\rho}\right) y_t \\
+    a_{t+1} &= a_t + \left(\frac{1-\rho}{1+r-\rho}\right) y_t
+\end{align*}
+which matches our result above derived using the ``brute force'' method.
+
+\noindent
+\textbf{Exercise.} Assume the conditions for certainty equivalence hold. Derive the consumption and savings functions for the following $iid$ income process using brute force and guess-and-verify: $$y_t = \begin{cases} y_h & \text{with probability $p_h \in (0,1)$} \\ y_l & \text{with probability $p_l$} \end{cases}$$
+
+\subsubsection{``Income Shocks'' \& Changes in Consumption}
+Consumption is related to income through two separate channels. First, a change in income affects the resources available to the household in the present period. Second, it provides \emph{information} to the household about its expectation of future income.
+
+\begin{align}
+    \Delta c_{t+1} &= c_{t+1} - c_t \nonumber \\
+    &= c_{t+1} - \expectation_t[c_{t+1}] \nonumber \\ 
+    &= ra_{t+1} + \left(\frac{r}{1+r}\right) \expectation_{t+1}\sum_{j=0}^\infty \frac{y_{t+1+j}}{(1+r)^j} - \expectation_t\left\{ ra_{t+1} + \left(\frac{r}{1+r}\right) \expectation_{t+1} \sum_{j=0}^\infty \frac{y_{t+1+j}}{(1+r)^j}\right\} \nonumber \\
+    &= ra_{t+1} - ra_{t+1} + \left(\frac{r}{1+r}\right) \left\{ \expectation_{t+1} \sum_{j=0}^\infty \frac{y_{t+1+j}}{(1+r)^j} - \underbrace{\expectation_t \expectation_{t+1} \sum_{j=0}^\infty \frac{y_{t+1+j}}{(1+r)^j}}_{\text{Apply LIE}} \right\} \nonumber \\
+    &= \left(\frac{r}{1+r}\right) \left\{ \sum_{j=0}^\infty \frac{\expectation_{t+1} y_{t+1+j} - \expectation_t y_{t+1+j}}{(1+r)^j} \right\} \label{eqn:Deltact}
+\end{align}
+
+Equation (\ref{eqn:Deltact}) tells us that the change in consumption depends on the realized value of income and the information that is gained between periods $t$ and $t+1$. Depending on the properties of the income process, the realization of $y_{t+1}$ causes a change in household's expectation of its \emph{entire} future income stream.
+
+Continuing with our example of AR(1) income process, at $j=0$, 
+\begin{align*}
+    \expectation_{t+1} y_{t+1} - \expectation_t y_{t+1} &= \expectation_{t+1} [\rho y_t + \epsilon_{t+1}] - \expectation_t [\rho y_t + \epsilon_{t+1}] \\
+    &= \rho y_t + \epsilon_{t+1} - \rho y_t \\
+    &= \epsilon_{t+1} 
+\end{align*}
+And at $j=1$, 
+\begin{align*}
+    \expectation_{t+1} y_{t+2} - \expectation_t y_{t+2} &= \expectation_{t+1} [\rho y_{t+1} + \epsilon_{t+2}] - \expectation_t [\rho y_{t+1} + \epsilon_{t+2}] \\
+    &= \expectation_{t+1} [\rho (\rho y_t + \epsilon_{t+1}) + \epsilon_{t+2}] - \expectation_t [\rho (\rho y_t + \epsilon_{t+1}) + \epsilon_{t+2}] \\
+    &= \rho^2 y_t + \rho \epsilon_{t+1} - \rho^2 y_t \\
+    &= \rho \epsilon_{t+1}
+\end{align*}
+
+Observing the pattern, we have 
+\begin{align*}
+    \Delta c_{t+1} &= \left(\frac{r}{1+r}\right) \left(\epsilon_{t+1} + \frac{\rho \epsilon_{t+1}}{1+r} + \dots \right) \\
+    &= \frac{r}{1+r} \cdot \epsilon_{t+1} \sum_{j=0}^\infty \left(\frac{\rho}{1+r}\right)^j \\ 
+    &= \frac{r}{1+r} \cdot \epsilon_{t+1} \left( \frac{1}{1 - \frac{\rho}{1+r}}\right) \\ 
+    &= \frac{r}{1+r} \cdot \epsilon_{t+1} \cdot \frac{1+r}{1+r-\rho} \\
+    &= \left(\frac{r}{1+r-\rho}\right) \epsilon_{t+1}
+\end{align*}
+
+Consider two extreme cases. If $\rho=1$, income follows a ``random walk'', and $\Delta c_{t+1} = \epsilon_{t+1}$. In words, household consumes income shock entirely when household faces ``permanent income shocks.`` Meanwhile, if $\rho=0$, and income process is $iid$, then $\Delta c_{t+1} = \left(\frac{r}{1+r}\right) \epsilon_{t+1}$. In this case, shocks are completely temporary, so household converts shock into annuity and spreads the shock over future periods.
+
+Notice that we can derive this same result using the consumption and savings functions derived using ``brute force'' and ``guess-and-verify'' above:
+\begin{align*}
+    c_t &= r a_t + \frac{r}{1+r-\rho} y_t \\
+    a_{t+1} &= a_t + \frac{1-\rho}{1+r-\rho}y_t
+\end{align*}
+Thus
+\begin{align*}
+    \Delta c_{t+1} &= r(a_{t+1} - a_t) + \frac{r}{1+r-\rho}\left(\rho y_t + \epsilon_{t+1} - y_t \right) \\
+                   &= \frac{r(1-\rho)}{1+r-\rho}y_t - \frac{r(1-\rho)}{1+r-\rho}y_t + \frac{r}{1+r-\rho}\epsilon_{t+1} \\
+                   &= \left(\frac{r}{1+r-\rho}\right)\epsilon_{t+1}
+\end{align*}
+which matches our result above. 
+
+%\subsection{Non-Expected Utility Frameworks}
+
+
+%\subsection{Summary}
+%\warning{Other results mentioned in Handbook of Macro}
+%\begin{itemize}
+%    \item Households save to smooth consumption despite variation in income over time (in the life cycle model, households accumulate wealth to maintain smooth consumption in retirement)
+%\end{itemize}
+
+\newpage
+% references page
+% if producing PDF, use biblatex
+\ifnotlatexml
+\printbibliography
+\else
+% if producing HTML5 or ePub using latexml, use natbib
+\bibliographystyle{plainnat}
+\bibliography{references/consumptionnotes.bib}
+\fi
+
+\end{document}
+
+
+
+

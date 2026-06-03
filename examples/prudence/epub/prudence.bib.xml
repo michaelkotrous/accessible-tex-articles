@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/Users/michaelkotrous/Dropbox/ADA Tex/articles/prudence,/Users/michaelkotrous/Dropbox/ADA Tex/articles/prudence/references"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <bibliography citestyle="numbers" xml:id="bib">
+    <title/>
+    <biblist>
+      <bibentry key="Leland1968" type="article" xml:id="bib.bib1">
+        <bib-title>Saving and uncertainty: the precautionary demand for saving</bib-title>
+        <bib-name role="author">
+          <surname>Leland</surname>
+          <givenname>Hayne E.</givenname>
+        </bib-name>
+        <bib-related role="host" type="journal">
+          <bib-title>The Quarterly Journal of Economics</bib-title>
+        </bib-related>
+        <bib-date role="publication">1968-08</bib-date>
+        <bib-data role="month">08</bib-data>
+        <bib-part role="volume">82</bib-part>
+        <bib-part role="number">3</bib-part>
+        <bib-part role="pages">465–473</bib-part>
+        <bib-identifier href="https://dx.doi.org/10.2307/1879518" id="10.2307/1879518" scheme="doi">Document</bib-identifier>
+        <bib-data role="self" type="BibTeX">@article{Leland1968,
+     title = {Saving and Uncertainty: The Precautionary Demand for Saving},
+    author = {Leland, Hayne E.},
+   journal = {The Quarterly Journal of Economics},
+      year = {1968},
+     month = {08},
+    volume = {82},
+    number = {3},
+     pages = {465-473},
+       doi = {10.2307/1879518}}
+</bib-data>
+      </bibentry>
+      <bibentry key="Kimball1990" type="article" xml:id="bib.bib2">
+        <bib-title>Precautionary saving in the small and in the large</bib-title>
+        <bib-name role="author">
+          <surname>Kimball</surname>
+          <givenname>Miles S.</givenname>
+        </bib-name>
+        <bib-related role="host" type="journal">
+          <bib-title>Econometrica</bib-title>
+        </bib-related>
+        <bib-date role="publication">1990</bib-date>
+        <bib-part role="volume">58</bib-part>
+        <bib-part role="number">1</bib-part>
+        <bib-part role="pages">53–73</bib-part>
+        <bib-url href="http://www.jstor.org/stable/2938334">Link</bib-url>
+        <bib-data role="self" type="BibTeX">@article{Kimball1990,
+     title = {Precautionary Saving in the Small and in the Large},
+    author = {Miles S. Kimball},
+   journal = {Econometrica},
+      year = {1990},
+    volume = {58},
+    number = {1},
+     pages = {53–73},
+       url = {http://www.jstor.org/stable/2938334}}
+</bib-data>
+      </bibentry>
+    </biblist>
+  </bibliography>
+</document>

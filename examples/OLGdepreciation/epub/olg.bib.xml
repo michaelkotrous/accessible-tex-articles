@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/Users/michaelkotrous/Dropbox/ADA Tex/articles/OLGdepreciation,/Users/michaelkotrous/Dropbox/ADA Tex/articles/OLGdepreciation/references"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <bibliography citestyle="numbers" xml:id="bib">
+    <title/>
+    <biblist>
+      <bibentry key="williamson1999macro" type="unpublished" xml:id="bib.bib1">
+        <bib-name role="author">
+          <surname>Williamson</surname>
+          <givenname>Stephen D.</givenname>
+        </bib-name>
+        <bib-title>Notes on macroeconomic theory</bib-title>
+        <bib-date role="publication">1999</bib-date>
+        <bib-note role="annotation">Unpublished lecture notes, Yale University</bib-note>
+        <bib-url href="http://www.econ.yale.edu/smith/econ510a/notes99.pdf">Link</bib-url>
+        <bib-data role="self" type="BibTeX">@unpublished{williamson1999macro,
+    author = {Stephen D. Williamson},
+     title = {Notes on Macroeconomic Theory},
+      year = {1999},
+      note = {Unpublished lecture notes, Yale University},
+       url = {http://www.econ.yale.edu/smith/econ510a/notes99.pdf}}
+</bib-data>
+      </bibentry>
+      <bibentry key="mukoyama2020olg" type="unpublished" xml:id="bib.bib2">
+        <bib-name role="author">
+          <surname>Mukoyama</surname>
+          <givenname>Toshihiko</givenname>
+        </bib-name>
+        <bib-title>Diamond overlapping generations model</bib-title>
+        <bib-date role="publication">2020</bib-date>
+        <bib-note role="annotation">Unpublished lecture notes, revised 2025/2026</bib-note>
+        <bib-url href="https://toshimukoyama.github.io/MyWebsite/OLG.pdf">Link</bib-url>
+        <bib-data role="self" type="BibTeX">@unpublished{mukoyama2020olg,
+    author = {Toshihiko Mukoyama},
+     title = {Diamond Overlapping Generations Model},
+      year = {2020},
+      note = {Unpublished lecture notes, revised 2025/2026},
+       url = {https://toshimukoyama.github.io/MyWebsite/OLG.pdf}}
+</bib-data>
+      </bibentry>
+      <bibentry key="Diamond1965" type="article" xml:id="bib.bib3">
+        <bib-title>National debt in a neoclassical growth model</bib-title>
+        <bib-name role="author">
+          <surname>Diamond</surname>
+          <givenname>Peter A.</givenname>
+        </bib-name>
+        <bib-related role="host" type="journal">
+          <bib-title>The American Economic Review</bib-title>
+        </bib-related>
+        <bib-date role="publication">1965</bib-date>
+        <bib-part role="volume">55</bib-part>
+        <bib-part role="number">5</bib-part>
+        <bib-part role="pages">1126–1150</bib-part>
+        <bib-data role="self" type="BibTeX">@article{Diamond1965,
+     title = {National Debt in a Neoclassical Growth Model},
+    author = {Peter A. Diamond},
+   journal = {The American Economic Review},
+      year = {1965},
+    volume = {55},
+    number = {5},
+     pages = {1126–1150}}
+</bib-data>
+      </bibentry>
+      <bibentry key="Samuelson1958" type="article" xml:id="bib.bib4">
+        <bib-name role="author">
+          <surname>Samuelson</surname>
+          <givenname>Paul A.</givenname>
+        </bib-name>
+        <bib-title>An exact consumption-loan model of interest with or without the social contrivance of money</bib-title>
+        <bib-related role="host" type="journal">
+          <bib-title>Journal of Political Economy</bib-title>
+        </bib-related>
+        <bib-date role="publication">1958</bib-date>
+        <bib-part role="volume">66</bib-part>
+        <bib-part role="number">6</bib-part>
+        <bib-part role="pages">467–482</bib-part>
+        <bib-identifier href="https://dx.doi.org/10.1086/258100" id="10.1086/258100" scheme="doi">Document</bib-identifier>
+        <bib-data role="self" type="BibTeX">@article{Samuelson1958,
+    author = {Paul A. Samuelson},
+     title = {An Exact Consumption-Loan Model of Interest with or without the Social Contrivance of Money},
+   journal = {Journal of Political Economy},
+      year = {1958},
+    volume = {66},
+    number = {6},
+     pages = {467-482},
+       doi = {10.1086/258100}}
+</bib-data>
+      </bibentry>
+    </biblist>
+  </bibliography>
+</document>
