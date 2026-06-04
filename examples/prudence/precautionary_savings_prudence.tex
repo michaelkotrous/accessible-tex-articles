@@ -6,11 +6,18 @@
 }
 \documentclass[11pt]{article}
 
+% Toggle for review drafts. Set \draftmodetrue to enable line numbers;
+% leave \draftmodefalse for the final/submission PDF.
+\newif\ifdraftmode
+\draftmodefalse
+
 \input{../../kotrous_article_preamble}
 
-% line numbers (for review drafts)
+% line numbers (for review drafts only)
+\ifdraftmode
 \usepackage{lineno}
-%\linenumbers
+\linenumbers
+\fi
 
 % biblatex bibliography (skip if using latexml to produce HTML5 or ePub version)
 \ifnotlatexml
@@ -21,8 +28,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % header
-\lhead{Kotrous} 
-\chead{Precautionary Savings \& Prudence} 
+\lhead{Kotrous}
+\chead{Precautionary Savings \& Prudence}
 \rhead{March 18, 2026}
 % footer
 \lfoot{}
