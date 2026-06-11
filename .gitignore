@@ -20,6 +20,9 @@
 *.dvi
 *.xdv
 
+# luamml sidecar HTML emitted alongside the PDF
+*-luamml-mathml.html
+
 # Temporary/editor files
 *.tmp
 *.bak
