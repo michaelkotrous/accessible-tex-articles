@@ -7,8 +7,6 @@
   \notlatexmltrue
 \fi
 
-\usepackage{xparse}
-
 % format margins and text areas
 \usepackage[margin=1in]{geometry}
 
@@ -40,18 +38,30 @@
 \setstretch{1.3}
 
 % footnote formatting
+%
+% Default \symbolfootnotes / \arabicfootnotes are no-ops so the LaTeXML
+% conversion (which doesn't typeset footnote markers — they're emitted as
+% semantic XML and styled by CSS) still resolves the document-body calls.
+% In print mode they are redefined below to switch numbering style and
+% the print-only footmisc/@makefnmark machinery is loaded.
+%
+% The \newif booleans must be declared BEFORE the \ifnotlatexml guard:
+% LaTeXML's skip-mode scanner counts \ifXXX tokens it encounters even
+% inside the body of \renewcommand, so any \newif inside the skipped
+% block would throw off \fi matching.
+\newcommand{\symbolfootnotes}{}
+\newcommand{\arabicfootnotes}{}
+\newif\ifinfootnotetext
+\newif\ifarabicfootnotes
+
+\ifnotlatexml
+\usepackage{xparse}
 \usepackage[hang, flushmargin]{footmisc}
 
 \makeatletter
 
-% Track whether we are typesetting the footnote text area
-\newif\ifinfootnotetext
-
 \AddToHook{cmd/@makefntext/before}{\infootnotetexttrue}
 \AddToHook{cmd/@makefntext/after}{\infootnotetextfalse}
-
-% Track whether we are using body-style Arabic footnotes
-\newif\ifarabicfootnotes
 
 % Width reserved for Arabic footnote markers in the footnote area
 \newlength{\footnotemarkwidth}
@@ -70,17 +80,18 @@
   \fi
 }
 
-\newcommand{\symbolfootnotes}{%
+\renewcommand{\symbolfootnotes}{%
   \arabicfootnotesfalse
   \renewcommand{\thefootnote}{\fnsymbol{footnote}}%
 }
 
-\newcommand{\arabicfootnotes}{%
+\renewcommand{\arabicfootnotes}{%
   \arabicfootnotestrue
   \renewcommand{\thefootnote}{\arabic{footnote}}%
 }
 
 \makeatother
+\fi
 
 % Adjust line spread and font family inside "pull quotes"
 % (csquotes must be loaded before biblatex)
