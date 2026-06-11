@@ -1,4 +1,4 @@
-% VERSION 05/14/2026
+% VERSION 06/11/2026
 % indicator to skip certain packages when converting to HTML5 / ePub
 \newif\ifnotlatexml
 \ifdefined\latexml
@@ -6,6 +6,8 @@
 \else
   \notlatexmltrue
 \fi
+
+\usepackage{xparse}
 
 % format margins and text areas
 \usepackage[margin=1in]{geometry}
@@ -36,6 +38,49 @@
 % format text spacing
 \usepackage{setspace}
 \setstretch{1.3}
+
+% footnote formatting
+\usepackage[hang, flushmargin]{footmisc}
+
+\makeatletter
+
+% Track whether we are typesetting the footnote text area
+\newif\ifinfootnotetext
+
+\AddToHook{cmd/@makefntext/before}{\infootnotetexttrue}
+\AddToHook{cmd/@makefntext/after}{\infootnotetextfalse}
+
+% Track whether we are using body-style Arabic footnotes
+\newif\ifarabicfootnotes
+
+% Width reserved for Arabic footnote markers in the footnote area
+\newlength{\footnotemarkwidth}
+\setlength{\footnotemarkwidth}{1.6em}
+
+% Main marker formatting
+\renewcommand{\@makefnmark}{%
+  \ifinfootnotetext
+    \ifarabicfootnotes
+      \normalfont\makebox[\footnotemarkwidth][r]{\@thefnmark.}\enspace
+    \else
+      \normalfont\makebox[\footnotemarkwidth][r]{\@thefnmark}\enspace
+    \fi
+  \else
+    \hbox{\@textsuperscript{\normalfont\@thefnmark}}%
+  \fi
+}
+
+\newcommand{\symbolfootnotes}{%
+  \arabicfootnotesfalse
+  \renewcommand{\thefootnote}{\fnsymbol{footnote}}%
+}
+
+\newcommand{\arabicfootnotes}{%
+  \arabicfootnotestrue
+  \renewcommand{\thefootnote}{\arabic{footnote}}%
+}
+
+\makeatother
 
 % Adjust line spread and font family inside "pull quotes"
 % (csquotes must be loaded before biblatex)
